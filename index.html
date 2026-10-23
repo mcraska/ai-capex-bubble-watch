@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Capex Bubble Watch</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0b0f1a; --panel:#121827; --panel-2:#0f1422; --line:#1f2a44;
+    --ink:#e6ecf5; --ink-dim:#9aa8c3; --ink-mute:#6b7897;
+    --accent:#5eead4; --accent-2:#60a5fa; --warn:#f59e0b; --hot:#ef4444;
+    --good:#22c55e; --bad:#ef4444; --amber:#f59e0b;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+  a{color:var(--accent-2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .app{max-width:1180px;margin:0 auto;padding:22px 22px 60px}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .brand-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .brand h1{font-size:18px;margin:0;letter-spacing:.2px}
+  .sub{color:var(--ink-dim);font-size:12.5px;margin:0 0 16px}
+  .takeaway{
+    background:linear-gradient(180deg,#152038,#121827);
+    border:1px solid var(--line);border-left:4px solid var(--warn);
+    border-radius:12px;padding:18px 20px;margin-bottom:18px;
+  }
+  .takeaway .label{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;color:var(--ink-mute);margin-bottom:8px}
+  .takeaway .body{font-size:16.5px;line-height:1.5;font-weight:500}
+  .takeaway .dod{margin-top:10px;font-size:13px;color:var(--ink-dim)}
+  .takeaway .dod strong{color:var(--accent)}
+  .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:16px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .kpi .k-title{font-size:11px;text-transform:uppercase;color:var(--ink-mute);letter-spacing:1px}
+  .kpi .k-val{font-size:24px;margin-top:6px;font-weight:700}
+  .kpi .k-sub{font-size:12px;color:var(--ink-dim);margin-top:4px}
+  .badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.6px}
+  .badge.AMBER{background:rgba(245,158,11,.18);color:#fbbf24;border:1px solid rgba(245,158,11,.45)}
+  .badge.RED{background:rgba(239,68,68,.18);color:#f87171;border:1px solid rgba(239,68,68,.45)}
+  .badge.GREEN{background:rgba(34,197,94,.15);color:#4ade80;border:1px solid rgba(34,197,94,.4)}
+  .buckets{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:16px}
+  .bucket{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;border-top:3px solid var(--line)}
+  .bucket.band-G{border-top-color:var(--good)}
+  .bucket.band-A{border-top-color:var(--amber)}
+  .bucket.band-R{border-top-color:var(--hot)}
+  .bucket .b-id{font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:1px}
+  .bucket .b-title{font-size:13px;font-weight:600;margin-top:2px}
+  .bucket .b-score{font-size:26px;font-weight:700;margin-top:8px}
+  .bucket .b-read{font-size:12px;color:var(--ink-dim);margin-top:6px;line-height:1.4}
+  .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-bottom:16px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .p-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px;flex-wrap:wrap}
+  .p-title h3{margin:0;font-size:14px;letter-spacing:.2px}
+  .p-title .meta{font-size:11.5px;color:var(--ink-mute)}
+  .chart-wrap{position:relative;height:180px}
+  .filters{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{background:#0e1526;border:1px solid var(--line);color:var(--ink-dim);padding:5px 10px;border-radius:999px;font-size:12px;cursor:pointer}
+  .chip:hover,.chip.active{border-color:var(--accent);color:var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--ink-mute);padding:8px 8px;border-bottom:1px solid var(--line);font-weight:600}
+  td{padding:9px 8px;border-bottom:1px solid rgba(31,42,68,.65);vertical-align:top}
+  tr:hover td{background:rgba(94,234,212,.04)}
+  .color-pill{display:inline-block;min-width:28px;text-align:center;padding:2px 7px;border-radius:6px;font-weight:700;font-size:11px}
+  .color-pill.G{background:rgba(34,197,94,.18);color:#4ade80}
+  .color-pill.A{background:rgba(245,158,11,.18);color:#fbbf24}
+  .color-pill.R{background:rgba(239,68,68,.18);color:#f87171}
+  .id-cell{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:600;color:var(--accent)}
+  .muted{color:var(--ink-mute)}
+  .list{margin:0;padding-left:18px;color:var(--ink-dim);font-size:13px}
+  .list li{margin-bottom:6px}
+  .prints{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+  .print{background:#0e1526;border:1px solid var(--line);border-radius:8px;padding:10px}
+  .print .when{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.8px}
+  .print .what{font-size:12.5px;margin-top:4px;color:var(--ink)}
+  .meth{font-size:12.5px;color:var(--ink-dim);line-height:1.55}
+  .meth code{background:#0e1526;padding:1px 5px;border-radius:4px;font-size:11.5px;color:var(--accent)}
+  .footer{margin-top:22px;color:var(--ink-mute);font-size:11.5px;text-align:center;line-height:1.5}
+  .footer .warn-line{color:var(--warn);font-weight:600;margin-bottom:4px}
+  @media(max-width:980px){
+    .kpis,.buckets{grid-template-columns:repeat(2,1fr)}
+    .grid{grid-template-columns:1fr}
+  }
+  @media(max-width:560px){
+    .kpis,.buckets{grid-template-columns:1fr}
+    .app{padding:14px 12px 40px}
+    .takeaway .body{font-size:15px}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="brand"><span class="brand-dot"></span><h1>AI Capex Bubble Watch</h1></div>
+  <p class="sub">Leading indicators of AI data-center capex stress · Composite score · As of <span id="asOf">—</span> · Inform only</p>
+
+  <section class="takeaway" id="takeaway">
+    <div class="label">Key takeaway</div>
+    <div class="body" id="takeawayBody">Loading…</div>
+    <div class="dod" id="dodLine"></div>
+  </section>
+
+  <div class="kpis" id="kpis"></div>
+  <div class="buckets" id="buckets"></div>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="p-title">
+        <h3>Composite history</h3>
+        <span class="meta">Oct 18 → Oct 22 · RED ≥ 50</span>
+      </div>
+      <div class="chart-wrap"><canvas id="sparkChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="p-title">
+        <h3>What the pattern means</h3>
+        <span class="meta">Desk read</span>
+      </div>
+      <p class="meth" id="patternText"></p>
+      <div class="p-title" style="margin-top:14px"><h3>Decisive confirmations</h3></div>
+      <ul class="list" id="decisiveList"></ul>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-bottom:16px">
+    <div class="p-title">
+      <h3>Indicators</h3>
+      <div class="filters" id="filters">
+        <button class="chip active" data-bucket="ALL">All</button>
+        <button class="chip" data-bucket="A">A</button>
+        <button class="chip" data-bucket="B">B</button>
+        <button class="chip" data-bucket="C">C</button>
+        <button class="chip" data-bucket="D">D</button>
+        <button class="chip" data-bucket="E">E</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Indicator</th>
+            <th>Color</th>
+            <th>w</th>
+            <th>Pts</th>
+            <th>Reading</th>
+          </tr>
+        </thead>
+        <tbody id="indBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="p-title">
+        <h3>Next decisive prints</h3>
+        <span class="meta">Calendar</span>
+      </div>
+      <div class="prints" id="prints"></div>
+    </div>
+    <div class="panel">
+      <div class="p-title">
+        <h3>Methodology</h3>
+        <span class="meta">Bands · weights · composite</span>
+      </div>
+      <div class="meth" id="methText"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="warn-line">Inform only. No trades.</div>
+    Scored leading indicators for AI capex bubble stress. Not investment advice. No account numbers.
+    Regime labels only (e.g. INFLATION). Owner: Leonidas · Created 2026-10-18 at Matt’s request.
+  </div>
+</div>
+
+<script>
+const PTS = {G:0, A:0.5, R:1};
+function bandOf(score){
+  if(score >= 50) return "RED";
+  if(score >= 25) return "AMBER";
+  return "GREEN";
+}
+function bucketBand(score){
+  if(score >= 50) return "R";
+  if(score >= 25) return "A";
+  return "G";
+}
+
+async function loadJSON(path){
+  const r = await fetch(path);
+  if(!r.ok) throw new Error(path + " " + r.status);
+  return r.json();
+}
+
+function renderKPIs(d){
+  const band = d.band || bandOf(d.composite);
+  const flip = d.nearest_flip || {id:"E4", if_red:d.if_E4_red};
+  const el = document.getElementById("kpis");
+  el.innerHTML = `
+    <div class="kpi">
+      <div class="k-title">Composite</div>
+      <div class="k-val">${d.composite.toFixed(1)}</div>
+      <div class="k-sub"><span class="badge ${band}">${band}</span> · RED ≥ 50</div>
+    </div>
+    <div class="kpi">
+      <div class="k-title">Points / weight</div>
+      <div class="k-val">${Number(d.points).toFixed(1)} <span style="font-size:14px;color:var(--ink-mute)">/ ${d.weight}</span></div>
+      <div class="k-sub">${d.indicator_count || (d.indicators||[]).length} indicators</div>
+    </div>
+    <div class="kpi">
+      <div class="k-title">R / A / G</div>
+      <div class="k-val"><span style="color:#f87171">${d.counts.R}</span>/<span style="color:#fbbf24">${d.counts.A}</span>/<span style="color:#4ade80">${d.counts.G}</span></div>
+      <div class="k-sub">${d.unweighted_amber_red_share}% amber or red (unweighted)</div>
+    </div>
+    <div class="kpi">
+      <div class="k-title">Nearest flip</div>
+      <div class="k-val">${flip.id}</div>
+      <div class="k-sub">→ ~${flip.if_red} RED</div>
+    </div>
+    <div class="kpi">
+      <div class="k-title">DoD Δ</div>
+      <div class="k-val">${(d.dod && d.dod.delta === 0) ? "0.0" : ((d.dod && d.dod.delta) || "—")}</div>
+      <div class="k-sub">${(d.dod && d.dod.color_changes && d.dod.color_changes.length) ? d.dod.color_changes.join(", ") : "No color changes"}</div>
+    </div>`;
+}
+
+function renderBuckets(d){
+  const el = document.getElementById("buckets");
+  const order = ["A","B","C","D","E"];
+  el.innerHTML = order.map(k => {
+    const b = d.buckets[k];
+    const bb = bucketBand(b.score);
+    return `<div class="bucket band-${bb}">
+      <div class="b-id">(${k})</div>
+      <div class="b-title">${b.title}</div>
+      <div class="b-score" style="color:${bb==="R"?"#f87171":bb==="A"?"#fbbf24":"#4ade80"}">${b.score.toFixed(1)}</div>
+      <div class="b-read">${b.read}</div>
+    </div>`;
+  }).join("");
+}
+
+function renderTable(indicators, filter){
+  const body = document.getElementById("indBody");
+  const rows = indicators.filter(r => filter === "ALL" || r.bucket === filter);
+  body.innerHTML = rows.map(r => {
+    const pts = PTS[r.color] * r.weight;
+    return `<tr>
+      <td class="id-cell">${r.id}</td>
+      <td>${r.name}</td>
+      <td><span class="color-pill ${r.color}">${r.color}</span></td>
+      <td>${r.weight}</td>
+      <td>${pts}</td>
+      <td class="muted">${r.reading || ""}</td>
+    </tr>`;
+  }).join("");
+}
+
+function renderSpark(series){
+  const ctx = document.getElementById("sparkChart");
+  const labels = series.map(s => s.date.slice(5));
+  const values = series.map(s => s.composite);
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        label: "Composite",
+        data: values,
+        borderColor: "#5eead4",
+        backgroundColor: "rgba(94,234,212,.12)",
+        fill: true,
+        tension: 0.25,
+        pointRadius: 4,
+        pointBackgroundColor: values.map(v => v >= 50 ? "#ef4444" : "#f59e0b"),
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {display:false},
+        tooltip: {
+          callbacks: {
+            label: c => ` ${c.parsed.y}`
+          }
+        }
+      },
+      scales: {
+        x: {ticks:{color:"#6b7897"}, grid:{color:"rgba(31,42,68,.6)"}},
+        y: {
+          min: 40, max: 55,
+          ticks:{color:"#6b7897"},
+          grid:{color:"rgba(31,42,68,.6)"},
+          border:{dash:[4,4]}
+        }
+      }
+    },
+    plugins: [{
+      id: "redLine",
+      afterDraw(chart){
+        const yScale = chart.scales.y;
+        const {left, right} = chart.chartArea;
+        const y = yScale.getPixelForValue(50);
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.strokeStyle = "rgba(239,68,68,.7)";
+        ctx.setLineDash([6,4]);
+        ctx.beginPath(); ctx.moveTo(left,y); ctx.lineTo(right,y); ctx.stroke();
+        ctx.fillStyle = "#f87171";
+        ctx.font = "11px sans-serif";
+        ctx.fillText("RED 50", right - 48, y - 6);
+        ctx.restore();
+      }
+    }]
+  });
+}
+
+async function main(){
+  const [latest, history] = await Promise.all([
+    loadJSON("data/latest.json"),
+    loadJSON("data/history.json"),
+  ]);
+  document.getElementById("asOf").textContent = latest.as_of;
+  document.getElementById("takeawayBody").textContent = latest.key_takeaway;
+  document.getElementById("dodLine").innerHTML =
+    `<strong>Day-over-day:</strong> ${(latest.dod && latest.dod.note) || "—"}`;
+  renderKPIs(latest);
+  renderBuckets(latest);
+  document.getElementById("patternText").textContent = latest.pattern || "";
+  document.getElementById("decisiveList").innerHTML =
+    (latest.decisive || []).map(x => `<li>${x}</li>`).join("");
+  document.getElementById("prints").innerHTML =
+    (latest.next_prints || []).map(p =>
+      `<div class="print"><div class="when">${p.when}</div><div class="what">${p.what}</div></div>`
+    ).join("");
+  const m = latest.methodology || {};
+  document.getElementById("methText").innerHTML = `
+    <div><strong>Color points:</strong> ${m.color_points || ""}</div>
+    <div style="margin-top:6px"><strong>Lead-time weights:</strong> ${m.weights || ""}</div>
+    <div style="margin-top:6px"><strong>Composite:</strong> <code>${m.composite || ""}</code></div>
+    <div style="margin-top:6px"><strong>Bands:</strong> ${m.bands || ""}</div>
+    <div style="margin-top:6px">${m.note || ""}</div>
+    <div style="margin-top:8px" class="muted">Today: ${latest.points} ÷ ${latest.weight} = <strong>${latest.composite}</strong> ${latest.band || bandOf(latest.composite)}.</div>`;
+
+  let filter = "ALL";
+  const indicators = latest.indicators || [];
+  renderTable(indicators, filter);
+  document.getElementById("filters").addEventListener("click", e => {
+    const btn = e.target.closest(".chip");
+    if(!btn) return;
+    filter = btn.dataset.bucket;
+    document.querySelectorAll(".chip").forEach(c => c.classList.toggle("active", c === btn));
+    renderTable(indicators, filter);
+  });
+  renderSpark(history.series || []);
+}
+main().catch(err => {
+  document.getElementById("takeawayBody").textContent = "Failed to load data: " + err.message;
+});
+</script>
+</body>
+</html>
