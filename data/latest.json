@@ -20,17 +20,17 @@
   "composite_prior_26row": 49.1,
   "prior_weight": 56,
   "prior_points": 27.5,
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "band": "AMBER",
   "nearest_flip": {
     "id": "E4",
     "if_red": 50.8,
-    "note": "SOX 10,732 Oct 22, only +0.5% above its 200d (10,674); a close below → ~50.8 RED"
+    "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below → ~50.8 RED. Second: E5 — 42 Macro risk-off odds 60% (Oct 23 Leadoff) vs >65% red line → ~50.8 RED; both → ~52.5."
   },
   "dod": {
     "delta": 0.0,
     "color_changes": [],
-    "note": "No change vs 2026-10-22: no indicator changed color. SHIFTS: none in color; nearest move toward threshold is E4 (SOX cushion over 200d 7.9% → 0.5%, Confirmed, Yahoo)."
+    "note": "No change vs 2026-10-23: no indicator changed color. SHIFTS: E5 toward red (42 Macro risk-off 58% → 60%, Oct 23 Leadoff, Confirmed); E4 slightly away (SOX cushion over 200d 0.5% → 0.8%, Confirmed, Yahoo); B1/B2 deeper inside red (CRWV CDS >11%; META/NVDA/ORCL 5y CDS records; CNBC, Reported); C1 further from stress (B200 $9.58 3-month high; Ornn, Reported)."
   },
   "indicators": [
     {
@@ -69,7 +69,7 @@
       "id": "A5",
       "bucket": "A",
       "name": "CoWoS / HBM order signals",
-      "reading": "MU union rejects offer, talks 10-27; NVDA prepays back-end",
+      "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond ≥2029",
       "weight": 2,
       "color": "G"
     },
@@ -93,7 +93,7 @@
       "id": "B1",
       "bucket": "B",
       "name": "Neocloud credit & equity",
-      "reading": "CRWV CDS 1,066bp (Oct 21); 2032s 14.95%, 2031s 16.3%",
+      "reading": "CRWV CDS >11% (Rep., Oct 23); 2031/32 notes >15%",
       "weight": 3,
       "color": "R"
     },
@@ -101,7 +101,7 @@
       "id": "B2",
       "bucket": "B",
       "name": "Hyperscaler IG credit",
-      "reading": "ORCL CDS 315bp (Oct 21 cl.); rec. 334 close Oct 20",
+      "reading": "ORCL CDS ~343bp rec.; META/ NVDA 5y CDS records (Rep.)",
       "weight": 3,
       "color": "R"
     },
@@ -125,7 +125,7 @@
       "id": "B5",
       "bucket": "B",
       "name": "Vendor fin. / circular / off-B/S",
-      "reading": "NVDA $366B commits + KYEC $1.1B advance; Meta Class C",
+      "reading": "Meta ~$825B commits, >$450B take-or-pay (Rep.); NVDA $366B",
       "weight": 2,
       "color": "A"
     },
@@ -133,7 +133,7 @@
       "id": "B6",
       "bucket": "B",
       "name": "Lab funding & ratings",
-      "reading": "OpenAI ask cut $1.4T→$1.25T (Rep.); still above March",
+      "reading": "OpenAI $1.25T after 'pushback' (Rep.); Anth. S-1 not filed",
       "weight": 3,
       "color": "A"
     },
@@ -141,7 +141,7 @@
       "id": "C1",
       "bucket": "C",
       "name": "GPU rental prices",
-      "reading": "H100 20d $2.88; B200 $9.32 spot (20d $8.01)",
+      "reading": "H100 20d $2.90; B200 $9.58 spot 3-mo high (20d $8.10)",
       "weight": 3,
       "color": "G"
     },
@@ -149,7 +149,7 @@
       "id": "C2",
       "bucket": "C",
       "name": "Token price vs usage",
-      "reading": "Anthropic limit A/B (SA, Rep.); OW agent $0.39 vs $11.42/task",
+      "reading": "Kimi K3.1 Pro 55 at ~1/3 Opus cost; Anth. 'Efficient mode'",
       "weight": 2,
       "color": "A"
     },
@@ -205,7 +205,7 @@
       "id": "E1",
       "bucket": "E",
       "name": "10y / real yield / MOVE",
-      "reading": "10y 4.96; TIPS 2.64; MOVE 106.8 (Oct 22)",
+      "reading": "10y 5.00; TIPS 2.66; MOVE 103.3 (Oct 23)",
       "weight": 2,
       "color": "A"
     },
@@ -229,7 +229,7 @@
       "id": "E4",
       "bucket": "E",
       "name": "Semis breadth & positioning",
-      "reading": "SOX 10,732 (Oct 22) −26.7% from hi, +0.5% >200d; 16/99",
+      "reading": "SOX 10,779 (Oct 23) −26.3% from hi, +0.8% >200d; 16/89",
       "weight": 2,
       "color": "A"
     },
@@ -237,7 +237,7 @@
       "id": "E5",
       "bucket": "E",
       "name": "42 Macro regime",
-      "reading": "INFLATION (Oct 17, 3rd); Oct 22 Leadoff un-hedged, 58% off",
+      "reading": "INFLATION (Oct 23 Leadoff, official); risk-off 60% (58%)",
       "weight": 2,
       "color": "A"
     },
@@ -267,12 +267,12 @@
     },
     "B": {
       "title": "Financing & credit",
-      "read": "Where the stress is: neocloud credit distressed, IPO window down to Anthropic, Oracle CDS red; SpaceX $40B debt ~8% and OpenAI ask trimmed (Reported).",
+      "read": "Where the stress is: CoreWeave CDS >11%, Meta/NVIDIA/Oracle 5y CDS at records, Solidigm IPO pulled, OpenAI round trimmed to $1.25T after pushback (all Reported); IPO window down to Anthropic (S-1 not yet filed).",
       "score": 76.5
     },
     "C": {
       "title": "Demand & unit economics",
-      "read": "GPU rents near highs (B200 $9.32); Census AI use new high 24.6%; token spend vs price amber (C2); revenue-vs-capex gap amber.",
+      "read": "GPU rents at a 3-month high (B200 $9.58); Census AI use 24.6% new high; token price vs spend amber (C2) as Kimi K3.1 Pro reaches near-frontier at ~1/3 the cost; revenue-vs-capex gap amber.",
       "score": 18.2
     },
     "D": {
@@ -282,11 +282,11 @@
     },
     "E": {
       "title": "Macro & markets",
-      "read": "INFLATION regime (Leadoff un-hedged); 10y 4.96 on a growth-scare rally, MOVE 106.8; SOX only +0.5% above its 200d.",
+      "read": "42 Macro INFLATION with risk-off odds 60% (Oct 23 Leadoff, official); SOX +0.8% above its 200d with weak breadth; 10y 5.00%, MOVE 103; midterms Nov 3; margin debt near records.",
       "score": 50.0
     }
   },
-  "key_takeaway": "No change: 49.2 AMBER for a third day, 0.8 pt under RED, with no indicator changing color. But the nearest flip is now one close away: SOX fell 6.7% on Oct 22 to just 0.5% above its 200-day, with only 16 of 99 AI names above their 50-day, so a weak semis close would tip the composite to ~50.8 RED. Financing evidence thickened (SpaceX $40B debt at ~7.75–8.3%, OpenAI ask cut to $1.25T, AI-name CDS volume ~7x YoY; all Reported) while demand held (B200 rent near its high, Census AI adoption at a new 24.6% high).",
+  "key_takeaway": "No change: 49.2 AMBER for a fourth day, 0.8 pt under RED. SOX steadied Friday at 0.8% above its 200-day (from 0.5%), but 42 Macro's risk-off odds rose to 60% (red line >65%), so two rows now sit one move from tipping the composite to ~50.8 RED. Credit stress deepened inside the red rows (CoreWeave CDS above 11%; Meta, NVIDIA and Oracle CDS at records; all Reported) while GPU rents hit a new 3-month high (B200 $9.58, Reported): the price of compute is fine, the price of money is not.",
   "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
   "decisive": [
     "GPU rents breaking lower (T-14)",
@@ -296,15 +296,15 @@
   "next_prints": [
     {
       "when": "Any day",
-      "what": "Anthropic public S-1 (not on EDGAR as of Oct 23 ~7:31 AM CT)"
+      "what": "Anthropic public S-1 (0 EDGAR hits as of Oct 24 ~6:45 AM CT)"
     },
     {
-      "when": "~Oct 23–24",
-      "what": "Next 42 Macro weekly (E5)"
+      "when": "Mon Oct 26",
+      "what": "42 Macro Leadoff (official print; E5) · earliest FBTC T-07 trip"
     },
     {
       "when": "Oct 27 eve CT",
-      "what": "SK hynix Q3 (Oct 28 KST)"
+      "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks"
     },
     {
       "when": "Oct 28",
@@ -312,15 +312,19 @@
     },
     {
       "when": "Oct 29",
-      "what": "Amazon, Intel Q3"
+      "what": "Amazon, Intel Q3; Q3 GDP"
     },
     {
       "when": "Nov 3–4",
       "what": "US midterms (E6 checkpoint)"
     },
     {
+      "when": "By Nov 4",
+      "what": "Kimi K3.1 Pro open weights (C2)"
+    },
+    {
       "when": "~Nov 10",
-      "what": "TSMC Oct revenue"
+      "what": "TSMC Oct revenue; Oct CPI"
     },
     {
       "when": "Nov 11",
@@ -337,5 +341,6 @@
     "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
     "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
     "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band."
-  }
+  },
+  "if_E4_and_E5_red": 52.5
 }
