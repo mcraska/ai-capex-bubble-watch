@@ -1,346 +1,351 @@
 {
-  "composite": 49.2,
-  "weight": 59,
-  "points": 29.0,
-  "counts": {
-    "G": 9,
-    "A": 13,
-    "R": 6
+ "composite": 49.2,
+ "weight": 59,
+ "points": 29.0,
+ "counts": {
+  "G": 9,
+  "A": 13,
+  "R": 6
+ },
+ "bycat": {
+  "A": 33.3,
+  "B": 76.5,
+  "C": 18.2,
+  "D": 57.1,
+  "E": 50.0
+ },
+ "unweighted_amber_red_share": 67.9,
+ "if_B2_red": 49.2,
+ "if_E4_red": 50.8,
+ "composite_prior_26row": 49.1,
+ "prior_weight": 56,
+ "prior_points": 27.5,
+ "as_of": "2026-10-25",
+ "band": "AMBER",
+ "nearest_flip": {
+  "id": "E4",
+  "if_red": 50.8,
+  "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below → ~50.8 RED. E5 stays amber (Oct 24 weekly INFLATION, 4th straight; red = Risk Matrix DEFLATION only, so not a near flip)."
+ },
+ "dod": {
+  "delta": 0.0,
+  "color_changes": [],
+  "note": "No change vs 2026-10-24: no indicator changed color. SHIFTS within color: D1 deeper inside red (TX TCEQ freeze now covers on-site/BTM air permits, 6 campuses / 8.7 GW campus size; SA X, Reported); D2a Google Finland EIA halt logged (Confirmed, grid/permit); C1 a touch further from stress (H100 20d $2.90→$2.92, B200 20d $8.10→$8.19; Ornn, Reported); B6 color: OpenAI 11-day training pause (Confirmed), Anthropic S-1 still 0 EDGAR hits; E5 amber held on the Oct 24 weekly."
+ },
+ "indicators": [
+  {
+   "id": "A1",
+   "bucket": "A",
+   "name": "Capex guide rev. & 2nd deriv.",
+   "reading": "Meta Q3 cash capex +80.3%; guide narrowed up $135–145B",
+   "weight": 2,
+   "color": "G"
   },
-  "bycat": {
-    "A": 33.3,
-    "B": 76.5,
-    "C": 18.2,
-    "D": 57.1,
-    "E": 50.0
+  {
+   "id": "A2",
+   "bucket": "A",
+   "name": "Capex/OCF, FCF, capex/revenue",
+   "reading": "Meta Q3 104% of OCF, FCF −$2.1B; Q2 Big-4 96%",
+   "weight": 3,
+   "color": "R"
   },
-  "unweighted_amber_red_share": 67.9,
-  "if_B2_red": 49.2,
-  "if_E4_red": 50.8,
-  "composite_prior_26row": 49.1,
-  "prior_weight": 56,
-  "prior_points": 27.5,
-  "as_of": "2026-10-24",
-  "band": "AMBER",
-  "nearest_flip": {
-    "id": "E4",
-    "if_red": 50.8,
-    "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below \u2192 ~50.8 RED. E5 stays amber on INFLATION (Oct 24 weekly + Oct 23 Leadoff); red = Risk Matrix DEFLATION only (risk-off % is context)."
+  {
+   "id": "A3",
+   "bucket": "A",
+   "name": "Backlog / RPO quality",
+   "reading": "Meta commits ~$825B from $700B (Rep.); MSFT RPO $678B",
+   "weight": 2,
+   "color": "A"
   },
-  "dod": {
-    "delta": 0.0,
-    "color_changes": [],
-    "note": "No change vs 2026-10-23: no indicator changed color. SHIFTS: E5 rule clarified (red = Risk Matrix DEFLATION only; risk-off % is context; Oct 24 weekly INFLATION, risk-off 60% flat vs Oct 23 \u2014 amber held); E4 slightly away (SOX cushion over 200d 0.5% \u2192 0.8%, Confirmed, Yahoo); B1/B2 deeper inside red (CRWV CDS >11%; META/NVDA/ORCL 5y CDS records; CNBC, Reported); C1 further from stress (B200 $9.58 3-month high; Ornn, Reported)."
+  {
+   "id": "A4",
+   "bucket": "A",
+   "name": "TSMC monthly rev + AI guide",
+   "reading": "Sep +54.6% YoY; AI CAGR 'probably higher'",
+   "weight": 1,
+   "color": "G"
   },
-  "indicators": [
-    {
-      "id": "A1",
-      "bucket": "A",
-      "name": "Capex guide rev. & 2nd deriv.",
-      "reading": "Meta Q3 cash capex +80.3%; guide narrowed up $135\u2013145B",
-      "weight": 2,
-      "color": "G"
-    },
-    {
-      "id": "A2",
-      "bucket": "A",
-      "name": "Capex/OCF, FCF, capex/revenue",
-      "reading": "Meta Q3 104% of OCF, FCF \u2212$2.1B; Q2 Big-4 96%",
-      "weight": 3,
-      "color": "R"
-    },
-    {
-      "id": "A3",
-      "bucket": "A",
-      "name": "Backlog / RPO quality",
-      "reading": "Meta commits ~$825B from $700B (Rep.); MSFT RPO $678B",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "A4",
-      "bucket": "A",
-      "name": "TSMC monthly rev + AI guide",
-      "reading": "Sep +54.6% YoY; AI CAGR 'probably higher'",
-      "weight": 1,
-      "color": "G"
-    },
-    {
-      "id": "A5",
-      "bucket": "A",
-      "name": "CoWoS / HBM order signals",
-      "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond \u22652029",
-      "weight": 2,
-      "color": "G"
-    },
-    {
-      "id": "A6",
-      "bucket": "A",
-      "name": "Korea / Taiwan exports",
-      "reading": "TW Sep orders $114.2B +62.4% (record; Aug +71.4%)",
-      "weight": 1,
-      "color": "G"
-    },
-    {
-      "id": "A7",
-      "bucket": "A",
-      "name": "Server ODM monthly sales",
-      "reading": "Sep YoY +77\u2013100% (MoM \u221217 to \u221223%)",
-      "weight": 1,
-      "color": "G"
-    },
-    {
-      "id": "B1",
-      "bucket": "B",
-      "name": "Neocloud credit & equity",
-      "reading": "CRWV CDS >11% (Rep., Oct 23); 2031/32 notes >15%",
-      "weight": 3,
-      "color": "R"
-    },
-    {
-      "id": "B2",
-      "bucket": "B",
-      "name": "Hyperscaler IG credit",
-      "reading": "ORCL CDS ~343bp rec.; META/ NVDA 5y CDS records (Rep.)",
-      "weight": 3,
-      "color": "R"
-    },
-    {
-      "id": "B3",
-      "bucket": "B",
-      "name": "Private credit / GPU-backed / ABS",
-      "reading": "SpaceX $40B, chip-backed ~7.75%, +100bp (Rep.)",
-      "weight": 3,
-      "color": "A"
-    },
-    {
-      "id": "B4",
-      "bucket": "B",
-      "name": "AI-infra IPO window",
-      "reading": "3 pulls since Oct 8; DayOne, SB Energy weigh delay (Rep.)",
-      "weight": 3,
-      "color": "R"
-    },
-    {
-      "id": "B5",
-      "bucket": "B",
-      "name": "Vendor fin. / circular / off-B/S",
-      "reading": "Meta ~$825B commits, >$450B take-or-pay (Rep.); NVDA $366B",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "B6",
-      "bucket": "B",
-      "name": "Lab funding & ratings",
-      "reading": "OpenAI $1.25T after 'pushback' (Rep.); Anth. S-1 not filed",
-      "weight": 3,
-      "color": "A"
-    },
-    {
-      "id": "C1",
-      "bucket": "C",
-      "name": "GPU rental prices",
-      "reading": "H100 20d $2.90; B200 $9.58 spot 3-mo high (20d $8.10)",
-      "weight": 3,
-      "color": "G"
-    },
-    {
-      "id": "C2",
-      "bucket": "C",
-      "name": "Token price vs usage",
-      "reading": "Kimi K3.1 Pro 55 at ~1/3 Opus cost; Anth. 'Efficient mode'",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "C3",
-      "bucket": "C",
-      "name": "AI revenue vs capex gap",
-      "reading": "Meta FCF \u2212$2.1B; Anth. ~$450B commits (draft)",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "C4",
-      "bucket": "C",
-      "name": "Enterprise adoption",
-      "reading": "Census BTOS 24.6%, new high (Sep 21\u2013Oct 4)",
-      "weight": 1,
-      "color": "G"
-    },
-    {
-      "id": "C5",
-      "bucket": "C",
-      "name": "Payback period",
-      "reading": "CRWV ~2.5 yr claim; SpaceX ~1 yr",
-      "weight": 3,
-      "color": "G"
-    },
-    {
-      "id": "D1",
-      "bucket": "D",
-      "name": "Power / grid / interconnect",
-      "reading": "TCEQ pauses TX DC permits (Oct 19); Megapack sold out",
-      "weight": 2,
-      "color": "R"
-    },
-    {
-      "id": "D2a",
-      "bucket": "D",
-      "name": "Pipeline attrition (grid/permit)",
-      "reading": "Archbald PA no; Calloway KY, Missoula MT; Loudoun deal",
-      "weight": 2,
-      "color": "R"
-    },
-    {
-      "id": "D2b",
-      "bucket": "D",
-      "name": "Demand-caused cancellations",
-      "reading": "None on record; Tesla capex cut tagged unclear",
-      "weight": 3,
-      "color": "G"
-    },
-    {
-      "id": "E1",
-      "bucket": "E",
-      "name": "10y / real yield / MOVE",
-      "reading": "10y 5.00; TIPS 2.66; MOVE 103.3 (Oct 23)",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "E2",
-      "bucket": "E",
-      "name": "HY / IG spreads",
-      "reading": "HY OAS 3.27% (Oct 21; +51bp vs Sep 15); IG 0.88",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "E3",
-      "bucket": "E",
-      "name": "USD & liquidity",
-      "reading": "Broad USD 121.40 (Oct 16); RRP $0.35B; NFCI \u22120.50 loose",
-      "weight": 1,
-      "color": "A"
-    },
-    {
-      "id": "E4",
-      "bucket": "E",
-      "name": "Semis breadth & positioning",
-      "reading": "SOX 10,779 (Oct 23) \u221226.3% from hi, +0.8% >200d; 16/89",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "E5",
-      "bucket": "E",
-      "name": "42 Macro regime",
-      "reading": "INFLATION (Oct 24 weekly + Oct 23 Leadoff); risk-off 60% context; red=DEFLATION only",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "E6",
-      "bucket": "E",
-      "name": "Midterm policy risk (Nov 3)",
-      "reading": "D sweep 62% (Oct 18); TCEQ pause; VA SB 843 filed",
-      "weight": 2,
-      "color": "A"
-    },
-    {
-      "id": "E7",
-      "bucket": "E",
-      "name": "Retail margin debt (FINRA)",
-      "reading": "$1.48T Sep; 3y +117%; 5.3% of HH debt (Dale; 2000: 6%)",
-      "weight": 1,
-      "color": "A"
-    }
-  ],
-  "indicator_count": 28,
-  "buckets": {
-    "A": {
-      "title": "Capex intent & spend",
-      "read": "Spending and the supply chain are still accelerating. The weak spot is funding (capex/OCF).",
-      "score": 33.3
-    },
-    "B": {
-      "title": "Financing & credit",
-      "read": "Where the stress is: CoreWeave CDS >11%, Meta/NVIDIA/Oracle 5y CDS at records, Solidigm IPO pulled, OpenAI round trimmed to $1.25T after pushback (all Reported); IPO window down to Anthropic (S-1 not yet filed).",
-      "score": 76.5
-    },
-    "C": {
-      "title": "Demand & unit economics",
-      "read": "GPU rents at a 3-month high (B200 $9.58); Census AI use 24.6% new high; token price vs spend amber (C2) as Kimi K3.1 Pro reaches near-frontier at ~1/3 the cost; revenue-vs-capex gap amber.",
-      "score": 18.2
-    },
-    "D": {
-      "title": "Physical constraints",
-      "read": "Grid/permit attrition red and spreading locally (PA, KY, MT; Loudoun settlement). Demand-caused cancellations: none (green).",
-      "score": 57.1
-    },
-    "E": {
-      "title": "Macro & markets",
-      "read": "42 Macro INFLATION with risk-off odds 60% (Oct 23 Leadoff, official); SOX +0.8% above its 200d with weak breadth; 10y 5.00%, MOVE 103; midterms Nov 3; margin debt near records.",
-      "score": 50.0
-    }
+  {
+   "id": "A5",
+   "bucket": "A",
+   "name": "CoWoS / HBM order signals",
+   "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond ≥2029",
+   "weight": 2,
+   "color": "G"
   },
-  "key_takeaway": "No change: 49.2 AMBER for a fourth day, 0.8 pt under RED. Nearest flip is E4 \u2014 SOX closed Friday 0.8% above its 200-day (from 0.5%); a close below \u2192 ~50.8 RED. E5 stays amber: Oct 23 Leadoff and Oct 24 weekly both print Risk Matrix INFLATION with risk-off 60% (Confirmed); E5 red = DEFLATION only. Credit stress deepened inside the red rows (CoreWeave CDS above 11%; Meta, NVIDIA and Oracle CDS at records; all Reported) while GPU rents hit a new 3-month high (B200 $9.58, Reported): the price of compute is fine, the price of money is not.",
-  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000\u201301, shale 2014\u201315 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
-  "decisive": [
-    "GPU rents breaking lower (T-14)",
-    "Financing window shut for good \u2014 lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
-    "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
-  ],
-  "next_prints": [
-    {
-      "when": "Any day",
-      "what": "Anthropic public S-1 (0 EDGAR hits as of Oct 24 ~6:45 AM CT)"
-    },
-    {
-      "when": "Mon Oct 26",
-      "what": "42 Macro Leadoff (official print; E5) \u00b7 earliest FBTC T-07 trip"
-    },
-    {
-      "when": "Oct 27 eve CT",
-      "what": "SK hynix Q3 (Oct 28 KST) \u00b7 Micron Taoyuan talks"
-    },
-    {
-      "when": "Oct 28",
-      "what": "Alphabet, Microsoft Q3; FOMC"
-    },
-    {
-      "when": "Oct 29",
-      "what": "Amazon, Intel Q3; Q3 GDP"
-    },
-    {
-      "when": "Nov 3\u20134",
-      "what": "US midterms (E6 checkpoint)"
-    },
-    {
-      "when": "By Nov 4",
-      "what": "Kimi K3.1 Pro open weights (C2)"
-    },
-    {
-      "when": "~Nov 10",
-      "what": "TSMC Oct revenue; Oct CPI"
-    },
-    {
-      "when": "Nov 11",
-      "what": "CoreWeave Q3"
-    },
-    {
-      "when": "Late Nov",
-      "what": "NVDA 10-Q"
-    }
-  ],
-  "methodology": {
-    "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
-    "weights": "w3=financing/unit-econ (2\u20134q lead); w2=intent/orders/macro (~1\u20132q); w1=coincident supplier/volume",
-    "composite": "\u03a3(weight \u00d7 points) \u00f7 \u03a3(weight) \u00d7 100",
-    "bands": "GREEN < 25 \u00b7 AMBER 25\u201349 \u00b7 RED \u2265 50",
-    "note": "Trend: a rise of \u226510 points in two weeks matters even inside a band."
+  {
+   "id": "A6",
+   "bucket": "A",
+   "name": "Korea / Taiwan exports",
+   "reading": "TW Sep orders $114.2B +62.4% (record; Aug +71.4%)",
+   "weight": 1,
+   "color": "G"
   },
-  "if_E4_and_E5_red": 52.5
+  {
+   "id": "A7",
+   "bucket": "A",
+   "name": "Server ODM monthly sales",
+   "reading": "Sep YoY +77–100% (MoM −17 to −23%)",
+   "weight": 1,
+   "color": "G"
+  },
+  {
+   "id": "B1",
+   "bucket": "B",
+   "name": "Neocloud credit & equity",
+   "reading": "CRWV CDS >11% (Rep., Oct 23); 2031/32 notes >15%",
+   "weight": 3,
+   "color": "R"
+  },
+  {
+   "id": "B2",
+   "bucket": "B",
+   "name": "Hyperscaler IG credit",
+   "reading": "ORCL CDS ~343bp rec.; META/ NVDA 5y CDS records (Rep.)",
+   "weight": 3,
+   "color": "R"
+  },
+  {
+   "id": "B3",
+   "bucket": "B",
+   "name": "Private credit / GPU-backed / ABS",
+   "reading": "SpaceX $40B, chip-backed ~7.75%, +100bp (Rep.)",
+   "weight": 3,
+   "color": "A"
+  },
+  {
+   "id": "B4",
+   "bucket": "B",
+   "name": "AI-infra IPO window",
+   "reading": "3 pulls since Oct 8; DayOne, SB Energy weigh delay (Rep.)",
+   "weight": 3,
+   "color": "R"
+  },
+  {
+   "id": "B5",
+   "bucket": "B",
+   "name": "Vendor fin. / circular / off-B/S",
+   "reading": "Meta ~$825B commits, >$450B take-or-pay (Rep.); NVDA $366B",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "B6",
+   "bucket": "B",
+   "name": "Lab funding & ratings",
+   "reading": "OpenAI 11-day training pause (Conf.); Anth. S-1 0 hits",
+   "weight": 3,
+   "color": "A"
+  },
+  {
+   "id": "C1",
+   "bucket": "C",
+   "name": "GPU rental prices",
+   "reading": "H100 20d $2.92 (rising); B200 $9.57 near high (20d $8.19)",
+   "weight": 3,
+   "color": "G"
+  },
+  {
+   "id": "C2",
+   "bucket": "C",
+   "name": "Token price vs usage",
+   "reading": "Kimi K3.1 Pro 55 at ~1/3 Opus cost; Anth. 'Efficient mode'",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "C3",
+   "bucket": "C",
+   "name": "AI revenue vs capex gap",
+   "reading": "Meta FCF −$2.1B; Anth. ~$450B commits (draft)",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "C4",
+   "bucket": "C",
+   "name": "Enterprise adoption",
+   "reading": "Census BTOS 24.6%, new high (Sep 21–Oct 4)",
+   "weight": 1,
+   "color": "G"
+  },
+  {
+   "id": "C5",
+   "bucket": "C",
+   "name": "Payback period",
+   "reading": "CRWV ~2.5 yr claim; SpaceX ~1 yr",
+   "weight": 3,
+   "color": "G"
+  },
+  {
+   "id": "D1",
+   "bucket": "D",
+   "name": "Power / grid / interconnect",
+   "reading": "TX freeze now covers on-site power: 6 sites/8.7GW (SA, Rep.)",
+   "weight": 2,
+   "color": "R"
+  },
+  {
+   "id": "D2a",
+   "bucket": "D",
+   "name": "Pipeline attrition (grid/permit)",
+   "reading": "Google Finland EIA halt; TX phases ~1-qtr slip (Rep.)",
+   "weight": 2,
+   "color": "R"
+  },
+  {
+   "id": "D2b",
+   "bucket": "D",
+   "name": "Demand-caused cancellations",
+   "reading": "None on record; Tesla capex cut tagged unclear",
+   "weight": 3,
+   "color": "G"
+  },
+  {
+   "id": "E1",
+   "bucket": "E",
+   "name": "10y / real yield / MOVE",
+   "reading": "10y 5.00; TIPS 2.66; MOVE 103.3 (Oct 23)",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "E2",
+   "bucket": "E",
+   "name": "HY / IG spreads",
+   "reading": "HY OAS 3.27% (Oct 21; +51bp vs Sep 15); IG 0.88",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "E3",
+   "bucket": "E",
+   "name": "USD & liquidity",
+   "reading": "Broad USD 121.40 (Oct 16); RRP $0.35B; NFCI −0.50 loose",
+   "weight": 1,
+   "color": "A"
+  },
+  {
+   "id": "E4",
+   "bucket": "E",
+   "name": "Semis breadth & positioning",
+   "reading": "SOX 10,779 (Oct 23) −26.3% from hi, +0.8% >200d; 16/89",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "E5",
+   "bucket": "E",
+   "name": "42 Macro regime",
+   "reading": "INFLATION 4th wkly (Oct 24); risk-off 60%; red=DEFLATION",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "E6",
+   "bucket": "E",
+   "name": "Midterm policy risk (Nov 3)",
+   "reading": "D sweep 62% (Oct 18); TCEQ pause; VA SB 843 filed",
+   "weight": 2,
+   "color": "A"
+  },
+  {
+   "id": "E7",
+   "bucket": "E",
+   "name": "Retail margin debt (FINRA)",
+   "reading": "$1.48T Sep; 3y +117%; 5.3% of HH debt (Dale; 2000: 6%)",
+   "weight": 1,
+   "color": "A"
+  }
+ ],
+ "indicator_count": 28,
+ "buckets": {
+  "A": {
+   "title": "Capex intent & spend",
+   "read": "Spending and the supply chain are still accelerating. The weak spot is funding (capex/OCF).",
+   "score": 33.3
+  },
+  "B": {
+   "title": "Financing & credit",
+   "read": "Where the stress is: CoreWeave CDS >11%, Meta/NVIDIA/Oracle 5y CDS at records, Solidigm IPO pulled, OpenAI round trimmed to $1.25T after pushback (all Reported); IPO window down to Anthropic (S-1 not yet filed).",
+   "score": 76.5
+  },
+  "C": {
+   "title": "Demand & unit economics",
+   "read": "GPU rents at a 3-month high (B200 $9.58); Census AI use 24.6% new high; token price vs spend amber (C2) as Kimi K3.1 Pro reaches near-frontier at ~1/3 the cost; revenue-vs-capex gap amber.",
+   "score": 18.2
+  },
+  "D": {
+   "title": "Physical constraints",
+   "read": "Grid/permit attrition red and spreading: Texas freeze now covers on-site power air permits (SA: 6 campuses, 8.7 GW, ~1-qtr slip; Reported); Google Finland sites halted pending EIA. Demand-caused cancellations: none (green).",
+   "score": 57.1
+  },
+  "E": {
+   "title": "Macro & markets",
+   "read": "42 Macro INFLATION for a 4th straight weekly (Oct 24), risk-off 60%; SOX +0.8% above its 200d with weak breadth; 10y 5.00%, MOVE 103; midterms Nov 3; margin debt near records.",
+   "score": 50.0
+  }
+ },
+ "key_takeaway": "No change: 49.2 AMBER for a fifth day, 0.8 pt under RED, no indicator changed color. The weekend added physical friction, not demand loss: SemiAnalysis says Texas's permit freeze now covers air permits for on-site power at six campuses / 8.7 GW of campus size, with a ~1-quarter slip after ERCOT's Dec 10 report (Reported). GPU rents held (H100 20-session $2.92, B200 $8.19; Reported), and OpenAI disclosed an 11-day frontier-training pause for containment (Confirmed). E5 is no longer a near flip (red = Risk Matrix DEFLATION only; Oct 24 weekly INFLATION, risk-off 60%), so the only one-move trigger is a SOX close below its 200-day (~10,690; Fri 10,779) → ~50.8 RED.",
+ "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
+ "decisive": [
+  "GPU rents breaking lower (T-14)",
+  "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
+  "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
+ ],
+ "next_prints": [
+  {
+   "when": "By ~Oct 29",
+   "what": "Anthropic public S-1 (0 EDGAR hits Oct 25 ~6:48 AM CT; ~Oct 29 is the last filing day for a Nov 9-week roadshow under the 15-day rule)"
+  },
+  {
+   "when": "Mon Oct 26",
+   "what": "42 Macro Leadoff (official print) · earliest FBTC T-07 trip"
+  },
+  {
+   "when": "Oct 27 eve CT",
+   "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks"
+  },
+  {
+   "when": "Oct 28",
+   "what": "Alphabet, Microsoft Q3; FOMC"
+  },
+  {
+   "when": "Oct 29",
+   "what": "Amazon, Intel Q3; Q3 GDP"
+  },
+  {
+   "when": "Nov 3–4",
+   "what": "US midterms (E6 checkpoint)"
+  },
+  {
+   "when": "By Nov 4",
+   "what": "Kimi K3.1 Pro open weights (C2)"
+  },
+  {
+   "when": "~Nov 10",
+   "what": "TSMC Oct revenue; Oct CPI"
+  },
+  {
+   "when": "Nov 11",
+   "what": "CoreWeave Q3"
+  },
+  {
+   "when": "Late Nov",
+   "what": "NVDA 10-Q"
+  },
+  {
+   "when": "Dec 10",
+   "what": "ERCOT data-center report → TCEQ Texas permit freeze (D1)"
+  }
+ ],
+ "methodology": {
+  "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
+  "weights": "w3=financing/unit-econ (2–4q lead); w2=intent/orders/macro (~1–2q); w1=coincident supplier/volume",
+  "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
+  "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
+  "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band."
+ },
+ "if_E4_and_E5_red": 52.5,
+ "rows": 28
 }
