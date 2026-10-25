@@ -25,19 +25,19 @@
   "nearest_flip": {
     "id": "E4",
     "if_red": 50.8,
-    "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below → ~50.8 RED. Second: E5 — 42 Macro risk-off odds 60% (Oct 23 Leadoff) vs >65% red line → ~50.8 RED; both → ~52.5."
+    "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below \u2192 ~50.8 RED. E5 stays amber on INFLATION (Oct 24 weekly + Oct 23 Leadoff); red = Risk Matrix DEFLATION only (risk-off % is context)."
   },
   "dod": {
     "delta": 0.0,
     "color_changes": [],
-    "note": "No change vs 2026-10-23: no indicator changed color. SHIFTS: E5 toward red (42 Macro risk-off 58% → 60%, Oct 23 Leadoff, Confirmed); E4 slightly away (SOX cushion over 200d 0.5% → 0.8%, Confirmed, Yahoo); B1/B2 deeper inside red (CRWV CDS >11%; META/NVDA/ORCL 5y CDS records; CNBC, Reported); C1 further from stress (B200 $9.58 3-month high; Ornn, Reported)."
+    "note": "No change vs 2026-10-23: no indicator changed color. SHIFTS: E5 rule clarified (red = Risk Matrix DEFLATION only; risk-off % is context; Oct 24 weekly INFLATION, risk-off 60% flat vs Oct 23 \u2014 amber held); E4 slightly away (SOX cushion over 200d 0.5% \u2192 0.8%, Confirmed, Yahoo); B1/B2 deeper inside red (CRWV CDS >11%; META/NVDA/ORCL 5y CDS records; CNBC, Reported); C1 further from stress (B200 $9.58 3-month high; Ornn, Reported)."
   },
   "indicators": [
     {
       "id": "A1",
       "bucket": "A",
       "name": "Capex guide rev. & 2nd deriv.",
-      "reading": "Meta Q3 cash capex +80.3%; guide narrowed up $135–145B",
+      "reading": "Meta Q3 cash capex +80.3%; guide narrowed up $135\u2013145B",
       "weight": 2,
       "color": "G"
     },
@@ -45,7 +45,7 @@
       "id": "A2",
       "bucket": "A",
       "name": "Capex/OCF, FCF, capex/revenue",
-      "reading": "Meta Q3 104% of OCF, FCF −$2.1B; Q2 Big-4 96%",
+      "reading": "Meta Q3 104% of OCF, FCF \u2212$2.1B; Q2 Big-4 96%",
       "weight": 3,
       "color": "R"
     },
@@ -69,7 +69,7 @@
       "id": "A5",
       "bucket": "A",
       "name": "CoWoS / HBM order signals",
-      "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond ≥2029",
+      "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond \u22652029",
       "weight": 2,
       "color": "G"
     },
@@ -85,7 +85,7 @@
       "id": "A7",
       "bucket": "A",
       "name": "Server ODM monthly sales",
-      "reading": "Sep YoY +77–100% (MoM −17 to −23%)",
+      "reading": "Sep YoY +77\u2013100% (MoM \u221217 to \u221223%)",
       "weight": 1,
       "color": "G"
     },
@@ -157,7 +157,7 @@
       "id": "C3",
       "bucket": "C",
       "name": "AI revenue vs capex gap",
-      "reading": "Meta FCF −$2.1B; Anth. ~$450B commits (draft)",
+      "reading": "Meta FCF \u2212$2.1B; Anth. ~$450B commits (draft)",
       "weight": 2,
       "color": "A"
     },
@@ -165,7 +165,7 @@
       "id": "C4",
       "bucket": "C",
       "name": "Enterprise adoption",
-      "reading": "Census BTOS 24.6%, new high (Sep 21–Oct 4)",
+      "reading": "Census BTOS 24.6%, new high (Sep 21\u2013Oct 4)",
       "weight": 1,
       "color": "G"
     },
@@ -221,7 +221,7 @@
       "id": "E3",
       "bucket": "E",
       "name": "USD & liquidity",
-      "reading": "Broad USD 121.40 (Oct 16); RRP $0.35B; NFCI −0.50 loose",
+      "reading": "Broad USD 121.40 (Oct 16); RRP $0.35B; NFCI \u22120.50 loose",
       "weight": 1,
       "color": "A"
     },
@@ -229,7 +229,7 @@
       "id": "E4",
       "bucket": "E",
       "name": "Semis breadth & positioning",
-      "reading": "SOX 10,779 (Oct 23) −26.3% from hi, +0.8% >200d; 16/89",
+      "reading": "SOX 10,779 (Oct 23) \u221226.3% from hi, +0.8% >200d; 16/89",
       "weight": 2,
       "color": "A"
     },
@@ -237,7 +237,7 @@
       "id": "E5",
       "bucket": "E",
       "name": "42 Macro regime",
-      "reading": "INFLATION (Oct 23 Leadoff, official); risk-off 60% (58%)",
+      "reading": "INFLATION (Oct 24 weekly + Oct 23 Leadoff); risk-off 60% context; red=DEFLATION only",
       "weight": 2,
       "color": "A"
     },
@@ -286,11 +286,11 @@
       "score": 50.0
     }
   },
-  "key_takeaway": "No change: 49.2 AMBER for a fourth day, 0.8 pt under RED. SOX steadied Friday at 0.8% above its 200-day (from 0.5%), but 42 Macro's risk-off odds rose to 60% (red line >65%), so two rows now sit one move from tipping the composite to ~50.8 RED. Credit stress deepened inside the red rows (CoreWeave CDS above 11%; Meta, NVIDIA and Oracle CDS at records; all Reported) while GPU rents hit a new 3-month high (B200 $9.58, Reported): the price of compute is fine, the price of money is not.",
-  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
+  "key_takeaway": "No change: 49.2 AMBER for a fourth day, 0.8 pt under RED. Nearest flip is E4 \u2014 SOX closed Friday 0.8% above its 200-day (from 0.5%); a close below \u2192 ~50.8 RED. E5 stays amber: Oct 23 Leadoff and Oct 24 weekly both print Risk Matrix INFLATION with risk-off 60% (Confirmed); E5 red = DEFLATION only. Credit stress deepened inside the red rows (CoreWeave CDS above 11%; Meta, NVIDIA and Oracle CDS at records; all Reported) while GPU rents hit a new 3-month high (B200 $9.58, Reported): the price of compute is fine, the price of money is not.",
+  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000\u201301, shale 2014\u201315 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
   "decisive": [
     "GPU rents breaking lower (T-14)",
-    "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
+    "Financing window shut for good \u2014 lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
     "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
   ],
   "next_prints": [
@@ -300,11 +300,11 @@
     },
     {
       "when": "Mon Oct 26",
-      "what": "42 Macro Leadoff (official print; E5) · earliest FBTC T-07 trip"
+      "what": "42 Macro Leadoff (official print; E5) \u00b7 earliest FBTC T-07 trip"
     },
     {
       "when": "Oct 27 eve CT",
-      "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks"
+      "what": "SK hynix Q3 (Oct 28 KST) \u00b7 Micron Taoyuan talks"
     },
     {
       "when": "Oct 28",
@@ -315,7 +315,7 @@
       "what": "Amazon, Intel Q3; Q3 GDP"
     },
     {
-      "when": "Nov 3–4",
+      "when": "Nov 3\u20134",
       "what": "US midterms (E6 checkpoint)"
     },
     {
@@ -337,10 +337,10 @@
   ],
   "methodology": {
     "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
-    "weights": "w3=financing/unit-econ (2–4q lead); w2=intent/orders/macro (~1–2q); w1=coincident supplier/volume",
-    "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
-    "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
-    "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band."
+    "weights": "w3=financing/unit-econ (2\u20134q lead); w2=intent/orders/macro (~1\u20132q); w1=coincident supplier/volume",
+    "composite": "\u03a3(weight \u00d7 points) \u00f7 \u03a3(weight) \u00d7 100",
+    "bands": "GREEN < 25 \u00b7 AMBER 25\u201349 \u00b7 RED \u2265 50",
+    "note": "Trend: a rise of \u226510 points in two weeks matters even inside a band."
   },
   "if_E4_and_E5_red": 52.5
 }
