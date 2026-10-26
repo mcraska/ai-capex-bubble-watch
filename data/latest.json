@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-10-25",
+ "as_of": "2026-10-26",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E4",
   "if_red": 50.8,
-  "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (10,690); a close below → ~50.8 RED. E5 stays amber (Oct 24 weekly INFLATION, 4th straight; red = Risk Matrix DEFLATION only, so not a near flip)."
+  "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (~10,690); a close below → ~50.8 RED. E5 stays amber (Oct 24 weekly INFLATION; red = Risk Matrix DEFLATION only). Monday's session is the first test."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No change vs 2026-10-24: no indicator changed color. SHIFTS within color: D1 deeper inside red (TX TCEQ freeze now covers on-site/BTM air permits, 6 campuses / 8.7 GW campus size; SA X, Reported); D2a Google Finland EIA halt logged (Confirmed, grid/permit); C1 a touch further from stress (H100 20d $2.90→$2.92, B200 20d $8.10→$8.19; Ornn, Reported); B6 color: OpenAI 11-day training pause (Confirmed), Anthropic S-1 still 0 EDGAR hits; E5 amber held on the Oct 24 weekly."
+  "note": "No change vs 2026-10-25: no indicator changed color. SHIFTS within color: B2 context — Meta ~$35B equity + planned ~$60B ATM, NVIDIA/AMD/Broadcom non-binding interest up to $5B (Meta PR, Confirmed; launched, not pulled → red held on ORCL >300bp, 314bp Oct 22 Reported); B3 — Elon: debt 'almost entirely shut off' for AI-only builders, SpaceX closed $40B callable GPU debt (Confirmed first-hand; amber held, no default); B5 — Patel: NVIDIA $3.50/hr rent guarantee + ~50% upside share at neoclouds (Reported; no guarantee called); C1 — H100 20d $2.92→$2.95, B200 20d $8.19→$8.30, spot $9.70 3-mo high (Ornn, Reported); E4 breadth 18/99 above 50d (Confirmed); E6 Kalshi House D 90%, Senate D 63% (Oct 26, unchanged vs Oct 18). Logged, not scored: Chamath/Elon 2027 'stranded compute' forecast; Dale's dated 2H27–1H28 bear window."
  },
  "indicators": [
   {
@@ -93,7 +93,7 @@
    "id": "B1",
    "bucket": "B",
    "name": "Neocloud credit & equity",
-   "reading": "CRWV CDS >11% (Rep., Oct 23); 2031/32 notes >15%",
+   "reading": "CRWV 2032s 78.75 (~15.3% YTM, Oct 23); CDS ~1,066bp (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -101,7 +101,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "ORCL CDS ~343bp rec.; META/ NVDA 5y CDS records (Rep.)",
+   "reading": "Meta $35B equity + $60B ATM (Conf.); ORCL CDS 314bp (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -109,7 +109,7 @@
    "id": "B3",
    "bucket": "B",
    "name": "Private credit / GPU-backed / ABS",
-   "reading": "SpaceX $40B, chip-backed ~7.75%, +100bp (Rep.)",
+   "reading": "Elon: debt 'shut off' to AI-only builders; SpaceX $40B closed",
    "weight": 3,
    "color": "A"
   },
@@ -117,7 +117,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "3 pulls since Oct 8; DayOne, SB Energy weigh delay (Rep.)",
+   "reading": "3 pulls since Oct 8; Anth. S-1 0 EDGAR hits (Oct 26)",
    "weight": 3,
    "color": "R"
   },
@@ -125,7 +125,7 @@
    "id": "B5",
    "bucket": "B",
    "name": "Vendor fin. / circular / off-B/S",
-   "reading": "Meta ~$825B commits, >$450B take-or-pay (Rep.); NVDA $366B",
+   "reading": "NVDA $3.50/hr rent backstop (Rep.); NVDA/AMD/AVGO in META",
    "weight": 2,
    "color": "A"
   },
@@ -133,7 +133,7 @@
    "id": "B6",
    "bucket": "B",
    "name": "Lab funding & ratings",
-   "reading": "OpenAI 11-day training pause (Conf.); Anth. S-1 0 hits",
+   "reading": "OpenAI ~$30B at $1.25T pending; Anth. S-1 not public (Oct 26)",
    "weight": 3,
    "color": "A"
   },
@@ -141,7 +141,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $2.92 (rising); B200 $9.57 near high (20d $8.19)",
+   "reading": "H100 20d $2.95 (rising); B200 $9.70 3-mo high (20d $8.30)",
    "weight": 3,
    "color": "G"
   },
@@ -181,7 +181,7 @@
    "id": "D1",
    "bucket": "D",
    "name": "Power / grid / interconnect",
-   "reading": "TX freeze now covers on-site power: 6 sites/8.7GW (SA, Rep.)",
+   "reading": "TX freeze on on-site power 8.7GW (SA); Chamath: queues clogged",
    "weight": 2,
    "color": "R"
   },
@@ -213,7 +213,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.27% (Oct 21; +51bp vs Sep 15); IG 0.88",
+   "reading": "HY OAS 3.40% (Oct 22; +64bp vs Sep 15); IG 0.89",
    "weight": 2,
    "color": "A"
   },
@@ -221,7 +221,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.40 (Oct 16); RRP $0.35B; NFCI −0.50 loose",
+   "reading": "Broad USD 121.40 (Oct 16); RRP $0.20B; NFCI −0.50 loose",
    "weight": 1,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,779 (Oct 23) −26.3% from hi, +0.8% >200d; 16/89",
+   "reading": "SOX 10,779 (Oct 23) +0.8% >200d; 18/99 above 50d",
    "weight": 2,
    "color": "A"
   },
@@ -245,7 +245,7 @@
    "id": "E6",
    "bucket": "E",
    "name": "Midterm policy risk (Nov 3)",
-   "reading": "D sweep 62% (Oct 18); TCEQ pause; VA SB 843 filed",
+   "reading": "Kalshi House D 90%, Senate D 63% (Oct 26); TCEQ pause",
    "weight": 2,
    "color": "A"
   },
@@ -286,7 +286,7 @@
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 49.2 AMBER for a fifth day, 0.8 pt under RED, no indicator changed color. The weekend added physical friction, not demand loss: SemiAnalysis says Texas's permit freeze now covers air permits for on-site power at six campuses / 8.7 GW of campus size, with a ~1-quarter slip after ERCOT's Dec 10 report (Reported). GPU rents held (H100 20-session $2.92, B200 $8.19; Reported), and OpenAI disclosed an 11-day frontier-training pause for containment (Confirmed). E5 is no longer a near flip (red = Risk Matrix DEFLATION only; Oct 24 weekly INFLATION, risk-off 60%), so the only one-move trigger is a SOX close below its 200-day (~10,690; Fri 10,779) → ~50.8 RED.",
+ "key_takeaway": "No change: 49.2 AMBER for a sixth day, 0.8 pt under RED. The weekend moved money, not demand: Meta launched ~$35B of equity (plus a planned ~$60B ATM) to fund AI capex (Confirmed), and Elon Musk says debt markets have 'almost entirely shut off' for builders without non-AI revenue while SpaceX closed $40B of GPU debt (Confirmed, first-hand). GPU rents set new highs (B200 $9.70; Ornn, Reported). One SOX close below its 200-day (~10,690; Fri 10,779) is still the only single move to ~50.8 RED.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
@@ -296,11 +296,11 @@
  "next_prints": [
   {
    "when": "By ~Oct 29",
-   "what": "Anthropic public S-1 (0 EDGAR hits Oct 25 ~6:48 AM CT; ~Oct 29 is the last filing day for a Nov 9-week roadshow under the 15-day rule)"
+   "what": "Anthropic public S-1 (0 EDGAR hits Oct 26 ~6:47 AM CT; ~Oct 29 is the last filing day for a Nov 9-week roadshow under the 15-day rule)"
   },
   {
    "when": "Mon Oct 26",
-   "what": "42 Macro Leadoff (official print) · earliest FBTC T-07 trip"
+   "what": "42 Macro Leadoff (official print) · FBTC T-07 decided on today's Farside row (posts after close)"
   },
   {
    "when": "Oct 27 eve CT",
