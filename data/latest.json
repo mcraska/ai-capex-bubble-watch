@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-10-26",
+ "as_of": "2026-10-27",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E4",
   "if_red": 50.8,
-  "note": "SOX 10,779 Fri Oct 23, +0.8% above its 200d (~10,690); a close below → ~50.8 RED. E5 stays amber (Oct 24 weekly INFLATION; red = Risk Matrix DEFLATION only). Monday's session is the first test."
+  "note": "SOX 11,083 Mon Oct 26 (+2.8%), +3.5% above its 200d (~10,708; Yahoo, Confirmed); a close below → ~50.8 RED. E5 stays amber (Oct 26 Leadoff INFLATION, risk-off 60%; red = Risk Matrix DEFLATION only)."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No change vs 2026-10-25: no indicator changed color. SHIFTS within color: B2 context — Meta ~$35B equity + planned ~$60B ATM, NVIDIA/AMD/Broadcom non-binding interest up to $5B (Meta PR, Confirmed; launched, not pulled → red held on ORCL >300bp, 314bp Oct 22 Reported); B3 — Elon: debt 'almost entirely shut off' for AI-only builders, SpaceX closed $40B callable GPU debt (Confirmed first-hand; amber held, no default); B5 — Patel: NVIDIA $3.50/hr rent guarantee + ~50% upside share at neoclouds (Reported; no guarantee called); C1 — H100 20d $2.92→$2.95, B200 20d $8.19→$8.30, spot $9.70 3-mo high (Ornn, Reported); E4 breadth 18/99 above 50d (Confirmed); E6 Kalshi House D 90%, Senate D 63% (Oct 26, unchanged vs Oct 18). Logged, not scored: Chamath/Elon 2027 'stranded compute' forecast; Dale's dated 2H27–1H28 bear window."
+  "note": "No change vs 2026-10-26: no indicator changed color. SHIFTS within color: B5 — Broadcom residual-value support on Anthropic's $63B SPV, peak ~$43B (Broadcom IR, Confirmed; amber held, no guarantee called); A5 — TSMC reportedly weighing 10–20% CoWoS price hikes, tool lead times 6–8 months (Commercial Times, Reported; green); C1 — B200 $9.76 new 3-month high, 20-session $8.41; H100 20-session $2.96 (Ornn, Reported; green); C2 — GPT-6.1 Terra $1/$5, −50% list, +6 AA points (Confirmed; amber held, leaning better); B2 — Meta raise is $95B total including the ATM (red held); E4 — SOX +3.5% above 200d (from +0.8%); E6 — Kalshi Senate D 65% (from 63%)."
  },
  "indicators": [
   {
@@ -69,7 +69,7 @@
    "id": "A5",
    "bucket": "A",
    "name": "CoWoS / HBM order signals",
-   "reading": "Solidigm IPO pulled; MU talks 10-27; HBM hybrid bond ≥2029",
+   "reading": "CoWoS +10–20% price hike (Rep.); tool lead times 6–8 mo",
    "weight": 2,
    "color": "G"
   },
@@ -101,7 +101,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "Meta $35B equity + $60B ATM (Conf.); ORCL CDS 314bp (Rep.)",
+   "reading": "Meta $95B total ($35B + $60B ATM, Conf.); ORCL 314bp (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -117,7 +117,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "3 pulls since Oct 8; Anth. S-1 0 EDGAR hits (Oct 26)",
+   "reading": "3 pulls since Oct 8; Anth. S-1 filed Oct 26, no range/S-1/A yet",
    "weight": 3,
    "color": "R"
   },
@@ -125,7 +125,7 @@
    "id": "B5",
    "bucket": "B",
    "name": "Vendor fin. / circular / off-B/S",
-   "reading": "NVDA $3.50/hr rent backstop (Rep.); NVDA/AMD/AVGO in META",
+   "reading": "AVGO RVS ~$43B peak on $63B Anth. SPV (Conf.); NVDA $3.50/hr",
    "weight": 2,
    "color": "A"
   },
@@ -133,7 +133,7 @@
    "id": "B6",
    "bucket": "B",
    "name": "Lab funding & ratings",
-   "reading": "OpenAI ~$30B at $1.25T pending; Anth. S-1 not public (Oct 26)",
+   "reading": "OpenAI ~$30B at $1.25T pending; Anth. S-1 public Oct 26, no range",
    "weight": 3,
    "color": "A"
   },
@@ -141,7 +141,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $2.95 (rising); B200 $9.70 3-mo high (20d $8.30)",
+   "reading": "H100 20d $2.96 (rising); B200 $9.76 new 3-mo high (20d $8.41)",
    "weight": 3,
    "color": "G"
   },
@@ -149,7 +149,7 @@
    "id": "C2",
    "bucket": "C",
    "name": "Token price vs usage",
-   "reading": "Kimi K3.1 Pro 55 at ~1/3 Opus cost; Anth. 'Efficient mode'",
+   "reading": "GPT-6.1 Terra $1/$5 (−50% list), +6 AA pts (Conf.); Baker ARR (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -157,7 +157,7 @@
    "id": "C3",
    "bucket": "C",
    "name": "AI revenue vs capex gap",
-   "reading": "Meta FCF −$2.1B; Anth. ~$450B commits (draft)",
+   "reading": "Anth. 1H26 rev $16.3B vs compute $8.9B (S-1); ~$9.7B burned (SA)",
    "weight": 2,
    "color": "A"
   },
@@ -205,7 +205,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 5.00; TIPS 2.66; MOVE 103.3 (Oct 23)",
+   "reading": "10y ~4.99 (Oct 26); TIPS 2.66, MOVE 103.3 (Oct 23)",
    "weight": 2,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,779 (Oct 23) +0.8% >200d; 18/99 above 50d",
+   "reading": "SOX 11,083 (Oct 26) +3.5% >200d; 18/99 above 50d",
    "weight": 2,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION 4th wkly (Oct 24); risk-off 60%; red=DEFLATION",
+   "reading": "INFLATION (Oct 26 Leadoff); risk-off 60%; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -245,7 +245,7 @@
    "id": "E6",
    "bucket": "E",
    "name": "Midterm policy risk (Nov 3)",
-   "reading": "Kalshi House D 90%, Senate D 63% (Oct 26); TCEQ pause",
+   "reading": "Kalshi House D 90.5%, Senate D 65% (Oct 27); TCEQ pause",
    "weight": 2,
    "color": "A"
   },
@@ -267,12 +267,12 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Where the stress is: CoreWeave CDS >11%, Meta/NVIDIA/Oracle 5y CDS at records, Solidigm IPO pulled, OpenAI round trimmed to $1.25T after pushback (all Reported); IPO window down to Anthropic (S-1 not yet filed).",
+   "read": "Where the stress is: CoreWeave 2032s ~15% yield and CDS >1,000bp, Oracle CDS ~314bp (Reported); Meta funding capex with $95B of equity incl. ATM (Confirmed); Broadcom now backstops ~$43B of Anthropic's $63B compute SPV (Confirmed). Anthropic S-1 filed Oct 26, not yet priced.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "GPU rents at a 3-month high (B200 $9.58); Census AI use 24.6% new high; token price vs spend amber (C2) as Kimi K3.1 Pro reaches near-frontier at ~1/3 the cost; revenue-vs-capex gap amber.",
+   "read": "GPU rents at a 3-month high (B200 $9.76, 20-session $8.41; Ornn, Reported); GPT-6.1 Terra halves list price with measured gains (Confirmed); token price vs spend still amber (C2); revenue-vs-capex gap amber, Anthropic 1H26 revenue $16.3B vs $8.9B compute (S-1).",
    "score": 18.2
   },
   "D": {
@@ -282,11 +282,11 @@
   },
   "E": {
    "title": "Macro & markets",
-   "read": "42 Macro INFLATION for a 4th straight weekly (Oct 24), risk-off 60%; SOX +0.8% above its 200d with weak breadth; 10y 5.00%, MOVE 103; midterms Nov 3; margin debt near records.",
+   "read": "42 Macro INFLATION (Oct 26 Leadoff), risk-off 60%; SOX bounced to +3.5% above its 200d, breadth still weak (18/99 above 50d); 10y ~4.99%, MOVE 103; midterms Nov 3 (Kalshi Senate D 65%); margin debt near records.",
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 49.2 AMBER for a sixth day, 0.8 pt under RED. The weekend moved money, not demand: Meta launched ~$35B of equity (plus a planned ~$60B ATM) to fund AI capex (Confirmed), and Elon Musk says debt markets have 'almost entirely shut off' for builders without non-AI revenue while SpaceX closed $40B of GPU debt (Confirmed, first-hand). GPU rents set new highs (B200 $9.70; Ornn, Reported). One SOX close below its 200-day (~10,690; Fri 10,779) is still the only single move to ~50.8 RED.",
+ "key_takeaway": "No change: 49.2 AMBER for a seventh day, 0.8 pt under RED. B200 rent made another 3-month high ($9.76; Ornn, Reported) and OpenAI's GPT-6.1 Terra launched at half its predecessor's list price with independently measured gains (Artificial Analysis, Confirmed): token prices down, compute prices up. The risk is migrating onto chip vendors' balance sheets: Broadcom now provides residual-value support on Anthropic's $63B compute SPV, peak ~$43B amortizing over five years (Broadcom IR, Confirmed). SOX bounced 2.8% Monday to 11,083, 3.5% above its 200-day (~10,710), so the only one-move flip (E4 → ~50.8 RED) moved further off. Inform only.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
@@ -295,48 +295,24 @@
  ],
  "next_prints": [
   {
-   "when": "By ~Oct 29",
-   "what": "Anthropic public S-1 (0 EDGAR hits Oct 26 ~6:47 AM CT; ~Oct 29 is the last filing day for a Nov 9-week roadshow under the 15-day rule)"
+   "when": "Tue Oct 27 ~7 PM CT",
+   "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks outcome"
   },
   {
-   "when": "Mon Oct 26",
-   "what": "42 Macro Leadoff (official print) · FBTC T-07 decided on today's Farside row (posts after close)"
+   "when": "Wed Oct 28",
+   "what": "FOMC 1:00 PM CT · Microsoft and Alphabet Q3 (capex guides, 2027 color; T-01/T-16)"
   },
   {
-   "when": "Oct 27 eve CT",
-   "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks"
+   "when": "Thu Oct 29",
+   "what": "Amazon, Intel, Samsung Q3 · Q3 GDP · earliest FBTC T-07 trip"
   },
   {
-   "when": "Oct 28",
-   "what": "Alphabet, Microsoft Q3; FOMC"
+   "when": "Tue Nov 3",
+   "what": "US midterms (E6) · AMD Q3"
   },
   {
-   "when": "Oct 29",
-   "what": "Amazon, Intel Q3; Q3 GDP"
-  },
-  {
-   "when": "Nov 3–4",
-   "what": "US midterms (E6 checkpoint)"
-  },
-  {
-   "when": "By Nov 4",
-   "what": "Kimi K3.1 Pro open weights (C2)"
-  },
-  {
-   "when": "~Nov 10",
-   "what": "TSMC Oct revenue; Oct CPI"
-  },
-  {
-   "when": "Nov 11",
-   "what": "CoreWeave Q3"
-  },
-  {
-   "when": "Late Nov",
-   "what": "NVDA 10-Q"
-  },
-  {
-   "when": "Dec 10",
-   "what": "ERCOT data-center report → TCEQ Texas permit freeze (D1)"
+   "when": "Nov 10–11",
+   "what": "TSMC Oct revenue · CPI · CoreWeave Q3"
   }
  ],
  "methodology": {
