@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-10-27",
+ "as_of": "2026-10-28",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E4",
   "if_red": 50.8,
-  "note": "SOX 11,083 Mon Oct 26 (+2.8%), +3.5% above its 200d (~10,708; Yahoo, Confirmed); a close below → ~50.8 RED. E5 stays amber (Oct 26 Leadoff INFLATION, risk-off 60%; red = Risk Matrix DEFLATION only)."
+  "note": "SOX 11,483 Tue Oct 27 (+3.6%), +7.0% above its 200d (~10,728; Yahoo, Confirmed); a close below → ~50.8 RED. E5 stays amber (Oct 27 Leadoff INFLATION, risk-off 60%; red = Risk Matrix DEFLATION only)."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No change vs 2026-10-26: no indicator changed color. SHIFTS within color: B5 — Broadcom residual-value support on Anthropic's $63B SPV, peak ~$43B (Broadcom IR, Confirmed; amber held, no guarantee called); A5 — TSMC reportedly weighing 10–20% CoWoS price hikes, tool lead times 6–8 months (Commercial Times, Reported; green); C1 — B200 $9.76 new 3-month high, 20-session $8.41; H100 20-session $2.96 (Ornn, Reported; green); C2 — GPT-6.1 Terra $1/$5, −50% list, +6 AA points (Confirmed; amber held, leaning better); B2 — Meta raise is $95B total including the ATM (red held); E4 — SOX +3.5% above 200d (from +0.8%); E6 — Kalshi Senate D 65% (from 63%)."
+  "note": "No change vs 2026-10-27: no indicator changed color. SHIFTS within color: B4 — Anthropic IPO reportedly the week of Nov 16, ~$100B raise at $1.4–2T (The Rundown, Reported; red held until pricing); B1 — Goldman multi-asset CIO calls some AI-name CDS 'pretty distressed' and the neocloud selloff 'a financing trade' (Reported; red held); E4 — SOX +7.0% above 200d (from +3.5%), the only one-move flip moved further off; E5 — Oct 27 Leadoff INFLATION, risk-off 60% (Confirmed; amber). Logged, not scored: Google TPUs on Oracle Cloud (Confirmed) and OpenAI's in-house inference chip (Reported) — bullish lab unit economics, mild pressure on GPU-collateral values."
  },
  "indicators": [
   {
@@ -93,7 +93,7 @@
    "id": "B1",
    "bucket": "B",
    "name": "Neocloud credit & equity",
-   "reading": "CRWV 2032s 78.75 (~15.3% YTM, Oct 23); CDS ~1,066bp (Rep.)",
+   "reading": "CRWV 2032s ~15.3% YTM (Oct 23); GS CIO: AI CDS 'distressed' (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -117,7 +117,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "3 pulls since Oct 8; Anth. S-1 filed Oct 26, no range/S-1/A yet",
+   "reading": "3 pulls since Oct 8; ANT IPO wk of Nov 16, ~$100B (Rep.); no range",
    "weight": 3,
    "color": "R"
   },
@@ -229,7 +229,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 11,083 (Oct 26) +3.5% >200d; 18/99 above 50d",
+   "reading": "SOX 11,483 (Oct 27) +7.0% >200d (~10,728)",
    "weight": 2,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Oct 26 Leadoff); risk-off 60%; red=DEFLATION",
+   "reading": "INFLATION (Oct 27 Leadoff); risk-off 60%; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -286,7 +286,7 @@
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 49.2 AMBER for a seventh day, 0.8 pt under RED. B200 rent made another 3-month high ($9.76; Ornn, Reported) and OpenAI's GPT-6.1 Terra launched at half its predecessor's list price with independently measured gains (Artificial Analysis, Confirmed): token prices down, compute prices up. The risk is migrating onto chip vendors' balance sheets: Broadcom now provides residual-value support on Anthropic's $63B compute SPV, peak ~$43B amortizing over five years (Broadcom IR, Confirmed). SOX bounced 2.8% Monday to 11,083, 3.5% above its 200-day (~10,710), so the only one-move flip (E4 → ~50.8 RED) moved further off. Inform only.",
+ "key_takeaway": "No change: 49.2 AMBER for an eighth day. The stress is still financing, not demand: Goldman's CIO calls this the 'debt-funded stage' with a 'sold-out sign' on 2027, and Anthropic's IPO reportedly targets the week of Nov 16. SOX jumped to 7.0% above its 200-day, so the only one-move flip to RED moved further off. MSFT/GOOGL report tonight.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
