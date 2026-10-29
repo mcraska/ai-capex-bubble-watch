@@ -20,24 +20,24 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-10-28",
+ "as_of": "2026-10-29",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E4",
   "if_red": 50.8,
-  "note": "SOX 11,483 Tue Oct 27 (+3.6%), +7.0% above its 200d (~10,728; Yahoo, Confirmed); a close below → ~50.8 RED. E5 stays amber (Oct 27 Leadoff INFLATION, risk-off 60%; red = Risk Matrix DEFLATION only)."
+  "note": "SOX 11,684 Wed Oct 28 (+1.8%), +8.7% above its 200d (~10,748; Yahoo, Confirmed); a close below with breadth <25% \u2192 ~50.8 RED. E5 stays amber (Oct 28 Leadoff INFLATION, risk-off 61%; red = Risk Matrix DEFLATION only)."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No change vs 2026-10-27: no indicator changed color. SHIFTS within color: B4 — Anthropic IPO reportedly the week of Nov 16, ~$100B raise at $1.4–2T (The Rundown, Reported; red held until pricing); B1 — Goldman multi-asset CIO calls some AI-name CDS 'pretty distressed' and the neocloud selloff 'a financing trade' (Reported; red held); E4 — SOX +7.0% above 200d (from +3.5%), the only one-move flip moved further off; E5 — Oct 27 Leadoff INFLATION, risk-off 60% (Confirmed; amber). Logged, not scored: Google TPUs on Oracle Cloud (Confirmed) and OpenAI's in-house inference chip (Reported) — bullish lab unit economics, mild pressure on GPU-collateral values."
+  "note": "No change vs 2026-10-28: no indicator changed color. SHIFTS within color: C3/C2 \u2014 Google Cloud +103%, Microsoft Cloud +30% (CEO posts, Confirmed), Google 1P tokens/min +40% QoQ (Confirmed); A1 \u2014 no capex-guide cut; GOOGL capex $51.4B, MSFT $45.2B short on delayed third-party capacity (Reported; green held, D2b green); B3 \u2014 \u226518 DC deals at double-digit yields, one $5B >11% (X News, Reported; amber, leaning worse); B2 \u2014 Oracle caps new funding at $20B through 2030 (Reported; red held, marginal relief); E4 \u2014 SOX +8.7% above 200d (from +7.0%); E5 \u2014 Oct 28 Leadoff INFLATION, risk-off 61% (Confirmed)."
  },
  "indicators": [
   {
    "id": "A1",
    "bucket": "A",
    "name": "Capex guide rev. & 2nd deriv.",
-   "reading": "Meta Q3 cash capex +80.3%; guide narrowed up $135–145B",
+   "reading": "MSFT/GOOGL Q3: no guide cut; GOOGL capex $51.4B, MSFT $45.2B delay (Rep.)",
    "weight": 2,
    "color": "G"
   },
@@ -45,7 +45,7 @@
    "id": "A2",
    "bucket": "A",
    "name": "Capex/OCF, FCF, capex/revenue",
-   "reading": "Meta Q3 104% of OCF, FCF −$2.1B; Q2 Big-4 96%",
+   "reading": "Meta Q3 104% of OCF, FCF \u2212$2.1B; Q2 Big-4 96%",
    "weight": 3,
    "color": "R"
   },
@@ -69,7 +69,7 @@
    "id": "A5",
    "bucket": "A",
    "name": "CoWoS / HBM order signals",
-   "reading": "CoWoS +10–20% price hike (Rep.); tool lead times 6–8 mo",
+   "reading": "CoWoS +10\u201320% price hike (Rep.); tool lead times 6\u20138 mo",
    "weight": 2,
    "color": "G"
   },
@@ -85,7 +85,7 @@
    "id": "A7",
    "bucket": "A",
    "name": "Server ODM monthly sales",
-   "reading": "Sep YoY +77–100% (MoM −17 to −23%)",
+   "reading": "Sep YoY +77\u2013100% (MoM \u221217 to \u221223%)",
    "weight": 1,
    "color": "G"
   },
@@ -93,7 +93,7 @@
    "id": "B1",
    "bucket": "B",
    "name": "Neocloud credit & equity",
-   "reading": "CRWV 2032s ~15.3% YTM (Oct 23); GS CIO: AI CDS 'distressed' (Rep.)",
+   "reading": "CRWV 2032s ~15.3% (Oct 23); CRWV/ NBIS \u221230% in Oct (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -101,7 +101,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "Meta $95B total ($35B + $60B ATM, Conf.); ORCL 314bp (Rep.)",
+   "reading": "ORCL caps new funding $20B (Rep.); Dale: DC bonds 7% from 5%",
    "weight": 3,
    "color": "R"
   },
@@ -109,7 +109,7 @@
    "id": "B3",
    "bucket": "B",
    "name": "Private credit / GPU-backed / ABS",
-   "reading": "Elon: debt 'shut off' to AI-only builders; SpaceX $40B closed",
+   "reading": "18 DC deals at double-digit yields; $5B >11% (Rep.); no default",
    "weight": 3,
    "color": "A"
   },
@@ -117,7 +117,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "3 pulls since Oct 8; ANT IPO wk of Nov 16, ~$100B (Rep.); no range",
+   "reading": "3 pulls since Oct 8; ANT S-1 public, no range; wk of Nov 16 (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -149,7 +149,7 @@
    "id": "C2",
    "bucket": "C",
    "name": "Token price vs usage",
-   "reading": "GPT-6.1 Terra $1/$5 (−50% list), +6 AA pts (Conf.); Baker ARR (Rep.)",
+   "reading": "Google 1P tokens/min +40% QoQ (Conf.); Kimi ~5 wks behind (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -157,7 +157,7 @@
    "id": "C3",
    "bucket": "C",
    "name": "AI revenue vs capex gap",
-   "reading": "Anth. 1H26 rev $16.3B vs compute $8.9B (S-1); ~$9.7B burned (SA)",
+   "reading": "GOOGL Cloud +103%, MSFT Cloud +30% (Conf.); ANT Q2 rev/compute 2.1x",
    "weight": 2,
    "color": "A"
   },
@@ -165,7 +165,7 @@
    "id": "C4",
    "bucket": "C",
    "name": "Enterprise adoption",
-   "reading": "Census BTOS 24.6%, new high (Sep 21–Oct 4)",
+   "reading": "Census BTOS 24.6%, new high (Sep 21\u2013Oct 4)",
    "weight": 1,
    "color": "G"
   },
@@ -189,7 +189,7 @@
    "id": "D2a",
    "bucket": "D",
    "name": "Pipeline attrition (grid/permit)",
-   "reading": "Google Finland EIA halt; TX phases ~1-qtr slip (Rep.)",
+   "reading": "San Diego, Pittsburg, Martin Co. moratoria; Hermantown vote delay",
    "weight": 2,
    "color": "R"
   },
@@ -197,7 +197,7 @@
    "id": "D2b",
    "bucket": "D",
    "name": "Demand-caused cancellations",
-   "reading": "None on record; Tesla capex cut tagged unclear",
+   "reading": "None on record; MSFT capex short = 3rd-party delay (Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -205,7 +205,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y ~4.99 (Oct 26); TIPS 2.66, MOVE 103.3 (Oct 23)",
+   "reading": "10y 5.05 (Oct 28); FOMC hold, 2 hike dissents (Conf.)",
    "weight": 2,
    "color": "A"
   },
@@ -213,7 +213,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.40% (Oct 22; +64bp vs Sep 15); IG 0.89",
+   "reading": "HY OAS 3.30% (Oct 26; \u221210bp vs Oct 22); IG 0.90",
    "weight": 2,
    "color": "A"
   },
@@ -221,7 +221,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.40 (Oct 16); RRP $0.20B; NFCI −0.50 loose",
+   "reading": "Broad USD 121.32 (Oct 23); RRP $0.23B; NFCI \u22120.50 loose",
    "weight": 1,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 11,483 (Oct 27) +7.0% >200d (~10,728)",
+   "reading": "SOX 11,684 (Oct 28) +8.7% >200d; 34/99 >50d (Oct 27)",
    "weight": 2,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Oct 27 Leadoff); risk-off 60%; red=DEFLATION",
+   "reading": "INFLATION (Oct 28 Leadoff); risk-off 61%; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -267,12 +267,12 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Where the stress is: CoreWeave 2032s ~15% yield and CDS >1,000bp, Oracle CDS ~314bp (Reported); Meta funding capex with $95B of equity incl. ATM (Confirmed); Broadcom now backstops ~$43B of Anthropic's $63B compute SPV (Confirmed). Anthropic S-1 filed Oct 26, not yet priced.",
+   "read": "Where the stress is: CoreWeave 2032s ~15% yield, neoclouds \u221230% in October, \u226518 data-center deals at double-digit yields and record ORCL/META/SpaceX CDS (Reported); Oracle now caps new funding at $20B through 2030 (Reported). Anthropic S-1 public, not yet priced.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "GPU rents at a 3-month high (B200 $9.76, 20-session $8.41; Ornn, Reported); GPT-6.1 Terra halves list price with measured gains (Confirmed); token price vs spend still amber (C2); revenue-vs-capex gap amber, Anthropic 1H26 revenue $16.3B vs $8.9B compute (S-1).",
+   "read": "Demand legs strengthening: Google Cloud +103%, Microsoft Cloud +30% (Confirmed), GPU rents near 3-month highs (Ornn, Reported), Anthropic Q2 revenue/compute 2.1x (S-1). C2/C3 amber, leaning better.",
    "score": 18.2
   },
   "D": {
@@ -286,41 +286,45 @@
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 49.2 AMBER for an eighth day. The stress is still financing, not demand: Goldman's CIO calls this the 'debt-funded stage' with a 'sold-out sign' on 2027, and Anthropic's IPO reportedly targets the week of Nov 16. SOX jumped to 7.0% above its 200-day, so the only one-move flip to RED moved further off. MSFT/GOOGL report tonight.",
- "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
+ "key_takeaway": "No change: 49.2 AMBER for a ninth day. The first hyperscaler prints since the Anthropic S-1 made demand look stronger (Google Cloud +103%, Microsoft Cloud +30%, Confirmed), while financing stress widened (at least 18 data-center deals at double-digit yields, Reported). Oracle capping new funding at $20B eases hyperscaler credit at the margin. SOX is 8.7% above its 200-day, so the only one-move flip to RED moved further off.",
+ "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000\u201301, shale 2014\u201315 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
-  "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
+  "Financing window shut for good \u2014 lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
   "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
  ],
  "next_prints": [
   {
-   "when": "Tue Oct 27 ~7 PM CT",
-   "what": "SK hynix Q3 (Oct 28 KST) · Micron Taoyuan talks outcome"
-  },
-  {
-   "when": "Wed Oct 28",
-   "what": "FOMC 1:00 PM CT · Microsoft and Alphabet Q3 (capex guides, 2027 color; T-01/T-16)"
-  },
-  {
    "when": "Thu Oct 29",
-   "what": "Amazon, Intel, Samsung Q3 · Q3 GDP · earliest FBTC T-07 trip"
+   "what": "Amazon, Intel, Samsung Q3 \u00b7 Q3 GDP advance 7:30 AM CT (T-16 leg b, A1/A2)"
+  },
+  {
+   "when": "Fri Oct 30\u201331",
+   "what": "Frontier calls F-04, F-01/P-01 \u00b7 Kimi K3.1 open weights (W-04, by Nov 4)"
   },
   {
    "when": "Tue Nov 3",
-   "what": "US midterms (E6) · AMD Q3"
+   "what": "US midterms + CA/CO/WA ballots (E6) \u00b7 AMD Q3"
   },
   {
-   "when": "Nov 10–11",
-   "what": "TSMC Oct revenue · CPI · CoreWeave Q3"
+   "when": "Wed Nov 4",
+   "what": "E6 checkpoint (realized House/Senate control)"
+  },
+  {
+   "when": "Nov 10\u201311",
+   "what": "TSMC Oct revenue \u00b7 CPI \u00b7 CoreWeave Q3"
+  },
+  {
+   "when": "Wk of Nov 16",
+   "what": "Anthropic IPO pricing (B4, Reported)"
   }
  ],
  "methodology": {
   "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
-  "weights": "w3=financing/unit-econ (2–4q lead); w2=intent/orders/macro (~1–2q); w1=coincident supplier/volume",
-  "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
-  "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
-  "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band."
+  "weights": "w3=financing/unit-econ (2\u20134q lead); w2=intent/orders/macro (~1\u20132q); w1=coincident supplier/volume",
+  "composite": "\u03a3(weight \u00d7 points) \u00f7 \u03a3(weight) \u00d7 100",
+  "bands": "GREEN < 25 \u00b7 AMBER 25\u201349 \u00b7 RED \u2265 50",
+  "note": "Trend: a rise of \u226510 points in two weeks matters even inside a band."
  },
  "if_E4_and_E5_red": 52.5,
  "rows": 28
