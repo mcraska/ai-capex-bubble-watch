@@ -201,21 +201,29 @@
   },
   {
    "date": "2026-10-29",
-   "composite": 49.2,
+   "composite": 47.5,
    "points": 29.0,
-   "weight": 59,
+   "weight": 61,
    "counts": {
-    "G": 9,
+    "G": 10,
     "A": 13,
     "R": 6
    },
    "bycat": {
-    "A": 33.3,
+    "A": 28.6,
     "B": 76.5,
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
+   },
+   "composite_pre_A8_28row": 49.2,
+   "note": "Method change: A8 added (weight 59→61); like-for-like 49.2"
+  }
+ ],
+ "method_changes": [
+  {
+   "date": "2026-10-29",
+   "change": "A8 Server OEM earnings added (w2, green); total weight 59 → 61; composite 49.2 → 47.5 by denominator only"
   }
  ]
 }
