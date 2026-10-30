@@ -217,13 +217,33 @@
     "E": 50.0
    },
    "composite_pre_A8_28row": 49.2,
-   "note": "Method change: A8 added (weight 59→61); like-for-like 49.2"
+   "note": "Method change: A8 added (weight 59\u219261); like-for-like 49.2"
+  },
+  {
+   "date": "2026-10-30",
+   "composite": 47.5,
+   "points": 29.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 13,
+    "R": 6
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 50.0
+   },
+   "composite_pre_A8_28row": 49.2,
+   "note": "No change; AMZN capex held, 2027 up; funding stress (Big-4 capex/OCF ~115%)"
   }
  ],
  "method_changes": [
   {
    "date": "2026-10-29",
-   "change": "A8 Server OEM earnings added (w2, green); total weight 59 → 61; composite 49.2 → 47.5 by denominator only"
+   "change": "A8 Server OEM earnings added (w2, green); total weight 59 \u2192 61; composite 49.2 \u2192 47.5 by denominator only"
   }
  ]
 }

@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-10-29",
+ "as_of": "2026-10-30",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E4",
   "if_red": 49.2,
-  "note": "After A8 (weight 61) no single flip reaches RED: E4 red alone → 49.2 (AMBER); E4 + E5 red → 50.8 RED. SOX 11,684 Oct 28, +8.7% above its 200d (Yahoo, Confirmed)."
+  "note": "No single flip reaches RED: E4 red alone \u2192 49.2 (AMBER); E4 + E5 red \u2192 50.8 RED. SOX 11,518 Oct 29, +7.0% above its 200d (Macro, Yahoo)."
  },
  "dod": {
-  "delta": -1.7,
+  "delta": 0.0,
   "color_changes": [],
-  "note": "Methodology change, not a market move: A8 Server OEM earnings added 2026-10-29 (green, w2), so total weight 59 → 61 and the composite reads 47.5 (29.0 ÷ 61). Like-for-like 28-row method is unchanged at 49.2 vs 10-28; no indicator changed color. Earlier 10-29 SHIFTS within color: C3/C2 Google Cloud +103%, Microsoft Cloud +30% (Confirmed); B3 ≥18 DC deals at double-digit yields (Reported); B2 Oracle caps new funding at $20B (Reported); E4 SOX +8.7% above 200d."
+  "note": "No color change vs 10-29 (47.5 AMBER, 61-weight method; like-for-like 28-row 49.2). Within color: A1 green held \u2014 Amazon reaffirmed ~$220B 2026 capex and 'meaningfully more' in 2027 (Confirmed), so all Big-3 held/raised capex and none blamed demand. A2 red worsened \u2014 AMZN Q3 capex/OCF ~182%, Big-4 aggregate ~115% (desk calc, Confirmed inputs), so T-16(b) leg 1 is met; trip still needs a 2027 guide < +10%. B1/B3 red/amber held \u2014 Texas grid hold delays syndication of a $15B Anthropic-linked DC loan (Reported). E4 amber \u2014 SOX 11,518 Oct 29, +7.0% above 200d."
  },
  "indicators": [
   {
@@ -45,7 +45,7 @@
    "id": "A2",
    "bucket": "A",
    "name": "Capex/OCF, FCF, capex/revenue",
-   "reading": "Meta Q3 104% of OCF, FCF −$2.1B; Q2 Big-4 96%",
+   "reading": "Big-4 Q3 ~115% of OCF; AMZN 182%, TTM FCF \u2212$42.4B",
    "weight": 3,
    "color": "R"
   },
@@ -69,7 +69,7 @@
    "id": "A5",
    "bucket": "A",
    "name": "CoWoS / HBM order signals",
-   "reading": "CoWoS +10–20% price hike (Rep.); tool lead times 6–8 mo",
+   "reading": "CoWoS +10\u201320% price hike (Rep.); tool lead times 6\u20138 mo",
    "weight": 2,
    "color": "G"
   },
@@ -85,7 +85,7 @@
    "id": "A7",
    "bucket": "A",
    "name": "Server ODM monthly sales",
-   "reading": "Sep YoY +77–100% (MoM −17 to −23%)",
+   "reading": "Sep YoY +77\u2013100% (MoM \u221217 to \u221223%)",
    "weight": 1,
    "color": "G"
   },
@@ -93,7 +93,7 @@
    "id": "A8",
    "bucket": "A",
    "name": "Server OEM AI/server earnings (NEW 10-29)",
-   "reading": "Dell AI servers +100%, FY27 AI guide $74B, backlog $95B; Lenovo ISG +98%; HPE Server +35.3%; SMCI Q1 prelim $18.5–19.5B vs $14.5–15.5B guide (Conf.)",
+   "reading": "Dell AI +100%, LNV ISG +98%, HPE Srv +35%, SMCI Q1 prelim 3.7\u20133.9x (Conf.)",
    "weight": 2,
    "color": "G"
   },
@@ -101,7 +101,7 @@
    "id": "B1",
    "bucket": "B",
    "name": "Neocloud credit & equity",
-   "reading": "CRWV 2032s ~15.3% (Oct 23); CRWV/ NBIS −30% in Oct (Rep.)",
+   "reading": "CRWV 2032s ~15.3% (Oct 23); CRWV/ NBIS \u221230% in Oct (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -173,7 +173,7 @@
    "id": "C4",
    "bucket": "C",
    "name": "Enterprise adoption",
-   "reading": "Census BTOS 24.6%, new high (Sep 21–Oct 4)",
+   "reading": "Census BTOS 24.6%, new high (Sep 21\u2013Oct 4)",
    "weight": 1,
    "color": "G"
   },
@@ -213,7 +213,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 5.05 (Oct 28); FOMC hold, 2 hike dissents (Conf.)",
+   "reading": "10y 4.98; TIPS 2.63; MOVE 93.5 (Oct 29)",
    "weight": 2,
    "color": "A"
   },
@@ -221,7 +221,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.30% (Oct 26; −10bp vs Oct 22); IG 0.90",
+   "reading": "HY OAS 3.14% (Oct 28; \u221216bp vs Oct 26); IG 0.86",
    "weight": 2,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.32 (Oct 23); RRP $0.23B; NFCI −0.50 loose",
+   "reading": "Broad USD 121.32 (Oct 23); RRP $0.35B; NFCI \u22120.49 loose",
    "weight": 1,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 11,684 (Oct 28) +8.7% >200d; 34/99 >50d (Oct 27)",
+   "reading": "SOX 11,518 (Oct 29) +7.0% >200d; 36/99 >50d (Oct 29)",
    "weight": 2,
    "color": "A"
   },
@@ -275,7 +275,7 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Where the stress is: CoreWeave 2032s ~15% yield, neoclouds −30% in October, ≥18 data-center deals at double-digit yields and record ORCL/META/SpaceX CDS (Reported); Oracle now caps new funding at $20B through 2030 (Reported). Anthropic S-1 public, not yet priced.",
+   "read": "Where the stress is: CoreWeave 2032s ~15% yield, neoclouds \u221230% in October, \u226518 data-center deals at double-digit yields and record ORCL/META/SpaceX CDS (Reported); Oracle now caps new funding at $20B through 2030 (Reported). Anthropic S-1 public, not yet priced.",
    "score": 76.5
   },
   "C": {
@@ -294,57 +294,41 @@
    "score": 50.0
   }
  },
- "key_takeaway": "Method change, not a market change: Server OEM earnings (Dell, Lenovo, HPE, Supermicro) now count as a leading indicator (A8, green), so the score reads 47.5 AMBER on the new 61-weight method; on the old method it is unchanged at 49.2 and nothing changed color. OEM orders and guides are rising (Dell AI servers +100% with a $95B backlog; Supermicro pre-announced Q1 well above guide). With the bigger denominator, no single flip reaches RED: E4 alone gives 49.2; E4 plus E5 gives 50.8.",
- "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
+ "key_takeaway": "No change: 47.5 AMBER (like-for-like 49.2). The Q3 hyperscaler cycle closed with no capex cut and every buyer calling itself supply-bound, but Amazon's capex ran ~182% of operating cash flow, so Big-4 capex now exceeds cash generation (~115%) and the stress is funding, not demand.",
+ "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000\u201301, shale 2014\u201315 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
-  "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
+  "Financing window shut for good \u2014 lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
   "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
  ],
  "next_prints": [
   {
-   "when": "Thu Oct 29",
-   "what": "Amazon, Intel, Samsung Q3 · Q3 GDP advance 7:30 AM CT (T-16 leg b, A1/A2)"
+   "when": "Sun Nov 1",
+   "what": "Korea Oct full-month exports (A6)"
   },
   {
-   "when": "Fri Oct 30–31",
-   "what": "Frontier calls F-04, F-01/P-01 · Kimi K3.1 open weights (W-04, by Nov 4)"
-  },
-  {
-   "when": "Tue Nov 3",
-   "what": "Supermicro full FQ1 FY27 print (A8)"
+   "when": "Mon Nov 2",
+   "what": "AAPL (memory cost, PCDS); Oct 30 Farside print (first post-Binance flow read)"
   },
   {
    "when": "Tue Nov 3",
-   "what": "US midterms + CA/CO/WA ballots (E6) · AMD Q3"
+   "what": "US midterms (E6/T-17) \u00b7 Supermicro full FQ1 (A8)"
   },
   {
-   "when": "Wed Nov 4",
-   "what": "E6 checkpoint (realized House/Senate control)"
+   "when": "Thu Nov 5",
+   "what": "IREN earnings (neocloud refi test, B1)"
   },
   {
-   "when": "Nov 10–11",
-   "what": "TSMC Oct revenue · CPI · CoreWeave Q3"
-  },
-  {
-   "when": "Wk of Nov 16",
-   "what": "Anthropic IPO pricing (B4, Reported)"
-  },
-  {
-   "when": "Thu Nov 19",
-   "what": "Lenovo FQ2 FY26/27 (A8)"
-  },
-  {
-   "when": "Tue Nov 24",
-   "what": "Dell FQ3 FY27 (A8)"
+   "when": "~Nov 10",
+   "what": "TSMC Oct revenue (A4) \u00b7 earliest Anthropic roadshow (B4)"
   }
  ],
  "methodology": {
   "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
-  "weights": "w3=financing/unit-econ (2–4q lead); w2=intent/orders/macro (~1–2q); w1=coincident supplier/volume",
-  "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
-  "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
-  "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 → 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
+  "weights": "w3=financing/unit-econ (2\u20134q lead); w2=intent/orders/macro (~1\u20132q); w1=coincident supplier/volume",
+  "composite": "\u03a3(weight \u00d7 points) \u00f7 \u03a3(weight) \u00d7 100",
+  "bands": "GREEN < 25 \u00b7 AMBER 25\u201349 \u00b7 RED \u2265 50",
+  "note": "Trend: a rise of \u226510 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 \u2192 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
  },
  "if_E4_and_E5_red": 50.8,
  "rows": 29,
