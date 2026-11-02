@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-01",
+ "as_of": "2026-11-02",
  "series": [
   {
    "date": "2026-10-18",
@@ -217,7 +217,7 @@
     "E": 50.0
    },
    "composite_pre_A8_28row": 49.2,
-   "note": "Method change: A8 added (weight 59\u219261); like-for-like 49.2"
+   "note": "Method change: A8 added (weight 59→61); like-for-like 49.2"
   },
   {
    "date": "2026-10-30",
@@ -278,12 +278,32 @@
    },
    "composite_pre_A8_28row": 49.2,
    "note": "No change; Korea Oct chips +259% YoY (A6 green reinforced); Oracle caps new funding $20B thru FY30 (B2 red held); B6 amber red-candidate"
+  },
+  {
+   "date": "2026-11-02",
+   "composite": 47.5,
+   "points": 29.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 13,
+    "R": 6
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 50.0
+   },
+   "composite_pre_A8_28row": 49.2,
+   "note": "No change; E4 breadth 25/99 on red line; C1 rents firm (B200 20d $9.11); SA 2028 midterm exposure 5.7–30 GW (E6 amber)"
   }
  ],
  "method_changes": [
   {
    "date": "2026-10-29",
-   "change": "A8 Server OEM earnings added (w2, green); total weight 59 \u2192 61; composite 49.2 \u2192 47.5 by denominator only"
+   "change": "A8 Server OEM earnings added (w2, green); total weight 59 → 61; composite 49.2 → 47.5 by denominator only"
   }
  ]
 }
