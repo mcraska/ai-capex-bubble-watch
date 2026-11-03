@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-11-02",
+ "as_of": "2026-11-03",
  "band": "AMBER",
  "nearest_flip": {
   "id": "B6",
   "if_red": 50.0,
-  "note": "B6 red alone → 50.0 RED. E4 red alone → 49.2 AMBER (AI-screen breadth 25/99 above 50d on Oct 30, exactly on the <25 red line; SOX 10,688.8 below its 200d 10,781.4); E4 + E5 red → 50.8 RED."
+  "note": "B6 red alone → 50.0 RED. E4 red alone → 49.2 AMBER (AI-screen breadth 25/99 above 50d on Oct 30, on the <25 red line; no new print Tue); E4 + E5 red → 50.8 RED."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No color change vs 11-01 (47.5 AMBER). C1 green held: Ornn H100 20d $3.05, B200 20d $9.11 (Nov 1, Reported); B300 offer anecdotes $4.60 (X, Reported) are the first edge-discount watch. E4 amber on the edge: 25/99 above 50d. E6 amber: SemiAnalysis says 2027 build largely locked, 2028 5.7–30 GW exposed to governor races and the Texas TCEQ freeze (Reported). B6 amber red-candidate: OpenAI ~$11B of ≤$20B; Anthropic seeks up to $3.5B from Japanese investors in its IPO (Bloomberg, Reported)."
+  "note": "No color change vs 11-02 (47.5 AMBER). C3 amber, lean now neutral/Watch-negative: Anthropic S-1/A-1 Q3 ~$17B gross, +47% QoQ (from +144%), op loss −$567M, rev/compute 1.72x from 2.08x, ~$600M price-cut drag (Confirmed); Ramp Q4-to-date business spend +15–25% (Reported). B4 red held: S-1/A-1 filed, range blank, buy-side ~$1.5–1.6T (Reported). C1 green: Ornn H100 20d $3.06, B200 20d $9.18 (Nov 2, Reported). A5 green reinforced: memory op margins ~80% (SA, Reported). E4 amber on the edge (25/99, no new breadth print). B6 amber red-candidate unchanged (UAE co-led funding claim unverified)."
  },
  "indicators": [
   {
@@ -92,7 +92,7 @@
   {
    "id": "A8",
    "bucket": "A",
-   "name": "Server OEM AI/server earnings (NEW 10-29)",
+   "name": "Server OEM AI/ server earnings",
    "reading": "Dell AI +100%, LNV ISG +98%, HPE Srv +35%, SMCI Q1 prelim 3.7–3.9x (Conf.)",
    "weight": 2,
    "color": "G"
@@ -125,7 +125,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "3 pulls since Oct 8; ANT S-1 public, no range; wk of Nov 16 (Rep.)",
+   "reading": "ANT S-1/A-1 filed Nov 2, range blank (Conf.); buy-side ~$1.5–1.6T (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -149,7 +149,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.05; B200 20d $9.11 (Nov 1, Ornn, Rep.)",
+   "reading": "H100 20d $3.06; B200 20d $9.18 (Nov 2, Ornn, Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -165,7 +165,7 @@
    "id": "C3",
    "bucket": "C",
    "name": "AI revenue vs capex gap",
-   "reading": "GOOGL Cloud +103%, MSFT Cloud +30% (Conf.); ANT Q2 rev/compute 2.1x",
+   "reading": "ANT Q3 ~$17B +47% QoQ (from +144%); rev/compute 1.72x (Conf.); Ramp Q4 +15–25%",
    "weight": 2,
    "color": "A"
   },
@@ -221,7 +221,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.14% (Oct 28; −16bp vs Oct 26); IG 0.86",
+   "reading": "HY OAS 3.26% (Oct 29; +12bp vs Oct 28); IG 0.89",
    "weight": 2,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.32 (Oct 23); RRP $0.35B; NFCI −0.49 loose",
+   "reading": "Broad USD 121.32 (Oct 23); RRP $4.4B (Oct 30); NFCI −0.49",
    "weight": 1,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,689 (Oct 30) −0.86% <200d; 36/99 >50d (Oct 29)",
+   "reading": "SOX 10,689 (Oct 30) <200d, −27% hi; 25/99 >50d (Oct 30) EDGE",
    "weight": 2,
    "color": "A"
   },
@@ -245,7 +245,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Oct 28 Leadoff); risk-off 61%; red=DEFLATION",
+   "reading": "INFLATION (Oct 31 ATH wkly); risk-off 61%; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -275,12 +275,12 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Where the stress is, and it deepened Oct 30: OpenAI cut its raise target to $20B with ~$11B in, Blackstone expects Anthropic at BB high junk post-IPO, WSJ says CoreWeave/Nebius/Nscale are shut out of bonds (all Reported), and Amazon disclosed a secured ~$80B supplier loan facility (Confirmed). No default or pulled IPO yet.",
+   "read": "Still where the stress is: Anthropic S-1/A-1 filed with ~$895B of take-or-pay commitments ($69.8B next 12 months) and liquidity $146.6B, range blank (Confirmed); buy-side pushing ~$1.5–1.6T vs ~$2T (Reported). OpenAI ~$11B of ≤$20B. Neocloud equity down hard (NBIS −42% from early Oct, Reported) while rents rise. No default or pulled IPO yet.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "Demand legs strengthening: Google Cloud +103%, Microsoft Cloud +30% (Confirmed), GPU rents near 3-month highs (Ornn, Reported), Anthropic Q2 revenue/compute 2.1x (S-1). C2/C3 amber, leaning better.",
+   "read": "Unit prices firm (H100 20d $3.06, B200 20d $9.18, Ornn, Reported; memory margins ~80%, SA, Reported). Monetization softening: Anthropic Q3 +47% QoQ vs +144%, rev/compute 1.72x vs 2.08x, ~$600M price-cut drag (Confirmed); Ramp Q4-to-date +15–25% (Reported). C2/C3 amber.",
    "score": 18.2
   },
   "D": {
@@ -290,11 +290,11 @@
   },
   "E": {
    "title": "Macro & markets",
-   "read": "42 Macro INFLATION (Oct 26 Leadoff), risk-off 60%; SOX bounced to +3.5% above its 200d, breadth still weak (18/99 above 50d); 10y ~4.99%, MOVE 103; midterms Nov 3 (Kalshi Senate D 65%); margin debt near records.",
+   "read": "42 Macro INFLATION (Oct 31 weekly), risk-off 61%; SOX below its 200d, AI breadth 25/99 above 50d (Oct 30) on the red line; 10y 4.91% (Nov 2); midterms today; margin debt near records.",
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 47.5 AMBER for a fourth day. Financing is still the hot spot (OpenAI's round holds B6 as the red candidate) and E4 breadth sits exactly on its red line at 25/99; demand and rents held (B200 20-day $9.11).",
+ "key_takeaway": "No change: 47.5 AMBER for a fifth day. Anthropic's S-1/A-1 shows growth slowing (+47% QoQ, revenue per $1 of compute 1.72x from 2.08x) into ~$895B of take-or-pay, so C3 leans Watch-negative inside amber; GPU rents and memory stay firm, and E4 breadth is still one name from red into midterms and AMD Q3.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
@@ -304,11 +304,11 @@
  "next_prints": [
   {
    "when": "Tue Nov 3",
-   "what": "US midterms (E6/T-17) · AMD Q3 · Supermicro full FQ1 (A8)"
+   "what": "US midterms (E6/T-17) · AMD Q3 after close"
   },
   {
    "when": "Wed Nov 4",
-   "what": "T-17 checkpoint; Treasury QRA; earliest T-07 Watch"
+   "what": "T-17 checkpoint; Treasury QRA; T-07 decided on Nov 3 Farside print; Macro MWF breadth (E4)"
   },
   {
    "when": "Thu Nov 5",
@@ -320,7 +320,7 @@
   },
   {
    "when": "Tue Nov 10",
-   "what": "TSMC October revenue (A4); October CPI"
+   "what": "TSMC October revenue (A4); October CPI; ~Anthropic roadshow (Reported)"
   }
  ],
  "methodology": {
