@@ -20,17 +20,17 @@
  "composite_prior_26row": 49.1,
  "prior_weight": 56,
  "prior_points": 27.5,
- "as_of": "2026-11-03",
+ "as_of": "2026-11-04",
  "band": "AMBER",
  "nearest_flip": {
-  "id": "B6",
-  "if_red": 50.0,
-  "note": "B6 red alone → 50.0 RED. E4 red alone → 49.2 AMBER (AI-screen breadth 25/99 above 50d on Oct 30, on the <25 red line; no new print Tue); E4 + E5 red → 50.8 RED."
+  "id": "E4",
+  "if_red": 49.2,
+  "note": "E4 red alone → 49.2 AMBER (breadth 26/99 on Nov 3; red <25). E4 + E6 red or E4 + E5 red → 50.8 RED. B6 red alone → 50.0 RED. E5 red = Risk Matrix DEFLATION only."
  },
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "No color change vs 11-02 (47.5 AMBER). C3 amber, lean now neutral/Watch-negative: Anthropic S-1/A-1 Q3 ~$17B gross, +47% QoQ (from +144%), op loss −$567M, rev/compute 1.72x from 2.08x, ~$600M price-cut drag (Confirmed); Ramp Q4-to-date business spend +15–25% (Reported). B4 red held: S-1/A-1 filed, range blank, buy-side ~$1.5–1.6T (Reported). C1 green: Ornn H100 20d $3.06, B200 20d $9.18 (Nov 2, Reported). A5 green reinforced: memory op margins ~80% (SA, Reported). E4 amber on the edge (25/99, no new breadth print). B6 amber red-candidate unchanged (UAE co-led funding claim unverified)."
+  "note": "No color change vs 11-03 (47.5 AMBER). Readings refreshed within color: A5 green (AMD Q3 demand > supply on wafers/substrates/packaging/memory, Confirmed). B2 red held (ORCL CDS 294.4bp, Reported; IG tech OAS 76→108bp per Dale; ~$1T AI debt pipeline, Reported; Meta up to $25B bond, Reported). B4 red held (Polymarket top-IPO odds 62%→28%, Reported). C1 green (Ornn H100 20d $3.07, B200 20d $9.26 Nov 3; Nebius B300 spot $12.19, Reported). D2a red held (TX moratorium pledge; Gerstner 10–15 GW of ~43 GW 2027). D2b green (Oracle–Tencent $7B cancel = export policy, not demand). E6 amber red-candidate (Nov 4 checkpoint, no escalation)."
  },
  "indicators": [
   {
@@ -69,7 +69,7 @@
    "id": "A5",
    "bucket": "A",
    "name": "CoWoS / HBM order signals",
-   "reading": "CoWoS +10–20% price hike (Rep.); tool lead times 6–8 mo",
+   "reading": "AMD Q3: demand > supply on wafers, substrates, pkg, memory (Conf.)",
    "weight": 2,
    "color": "G"
   },
@@ -109,7 +109,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "ORCL caps new funding $20B (Rep.); Dale: DC bonds 7% from 5%",
+   "reading": "ORCL CDS 294.4bp (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
    "weight": 3,
    "color": "R"
   },
@@ -125,7 +125,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "ANT S-1/A-1 filed Nov 2, range blank (Conf.); buy-side ~$1.5–1.6T (Rep.)",
+   "reading": "ANT S-1/A-1 range blank (Conf.); Polymkt top-IPO odds 62%→28% (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -149,7 +149,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.06; B200 20d $9.18 (Nov 2, Ornn, Rep.)",
+   "reading": "H100 20d $3.07; B200 20d $9.26 (Nov 3, Ornn); NBIS B300 spot $12.19 (Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -165,7 +165,7 @@
    "id": "C3",
    "bucket": "C",
    "name": "AI revenue vs capex gap",
-   "reading": "ANT Q3 ~$17B +47% QoQ (from +144%); rev/compute 1.72x (Conf.); Ramp Q4 +15–25%",
+   "reading": "ANT Q3 +47% QoQ, rev/compute 1.72x (Conf.); Ramp Q4 +15–25%, Pies disputes",
    "weight": 2,
    "color": "A"
   },
@@ -197,7 +197,7 @@
    "id": "D2a",
    "bucket": "D",
    "name": "Pipeline attrition (grid/permit)",
-   "reading": "San Diego, Pittsburg, Martin Co. moratoria; Hermantown vote delay",
+   "reading": "TX gov-elect DC moratorium pledge; Gerstner: 10–15 GW of ~43 GW 2027 at risk",
    "weight": 2,
    "color": "R"
   },
@@ -205,7 +205,7 @@
    "id": "D2b",
    "bucket": "D",
    "name": "Demand-caused cancellations",
-   "reading": "None on record; MSFT capex short = 3rd-party delay (Rep.)",
+   "reading": "None demand-cited; ORCL–Tencent $7B cancel = export policy (Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -213,7 +213,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.94; TIPS 2.60; MOVE 100.2 (Oct 30)",
+   "reading": "10y 4.91; TIPS 2.62 (Nov 2); ^TNX 4.95, MOVE 99.97 (Nov 3)",
    "weight": 2,
    "color": "A"
   },
@@ -221,7 +221,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.26% (Oct 29; +12bp vs Oct 28); IG 0.89",
+   "reading": "HY OAS 3.43% (Nov 2; +29bp vs Oct 28, +33bp m/m); IG 0.94",
    "weight": 2,
    "color": "A"
   },
@@ -229,7 +229,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.32 (Oct 23); RRP $4.4B (Oct 30); NFCI −0.49",
+   "reading": "Broad USD 121.67 (Oct 30); DXY 101.33 Nov 4 a.m.; RRP $0.4B; NFCI −0.49",
    "weight": 1,
    "color": "A"
   },
@@ -237,7 +237,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,689 (Oct 30) <200d, −27% hi; 25/99 >50d (Oct 30) EDGE",
+   "reading": "SOX 10,600 (Nov 3) <200d 10,807, −27.6% hi; 26/99 >50d (Nov 3) EDGE",
    "weight": 2,
    "color": "A"
   },
@@ -245,7 +245,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Oct 31 ATH wkly); risk-off 61%; red=DEFLATION",
+   "reading": "INFLATION (Nov 3 Leadoff PDF); risk-off 65%; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -253,7 +253,7 @@
    "id": "E6",
    "bucket": "E",
    "name": "Midterm policy risk (Nov 3)",
-   "reading": "SA: 2028 5.7–30 GW exposed; TX TCEQ freeze; vote Nov 3 (Rep.)",
+   "reading": "D sweep (Rep.); Hinojosa won TX (AP), moratorium pledge; red-candidate",
    "weight": 2,
    "color": "A"
   },
@@ -270,31 +270,31 @@
  "buckets": {
   "A": {
    "title": "Capex intent & spend",
-   "read": "Spending, the supply chain and now server OEMs (A8, new) are still accelerating: Dell AI servers +100% with a $95B backlog, Lenovo ISG +98%, HPE Server +35%, Supermicro pre-announced well above guide. The weak spot is funding (capex/OCF).",
+   "read": "Spending and the supply chain still accelerating: AMD Q3 DC +97%, 2027 revenue >80% with server doubling and demand above secured supply (Confirmed); server OEMs (A8) strong. The weak spot is funding (capex/OCF ~115%).",
    "score": 28.6
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Still where the stress is: Anthropic S-1/A-1 filed with ~$895B of take-or-pay commitments ($69.8B next 12 months) and liquidity $146.6B, range blank (Confirmed); buy-side pushing ~$1.5–1.6T vs ~$2T (Reported). OpenAI ~$11B of ≤$20B. Neocloud equity down hard (NBIS −42% from early Oct, Reported) while rents rise. No default or pulled IPO yet.",
+   "read": "Still where the stress is: IG tech spreads 76→108bp since end-2025 and ~$1T more AI debt coming (Dale; Reported); Oracle ~$20B raise at a discount, Meta up to $25B bond (Reported); ORCL CDS 294bp. Anthropic range blank; Polymarket top-IPO odds 62%→28% (Reported). No default or pulled IPO yet.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "Unit prices firm (H100 20d $3.06, B200 20d $9.18, Ornn, Reported; memory margins ~80%, SA, Reported). Monetization softening: Anthropic Q3 +47% QoQ vs +144%, rev/compute 1.72x vs 2.08x, ~$600M price-cut drag (Confirmed); Ramp Q4-to-date +15–25% (Reported). C2/C3 amber.",
+   "read": "Unit prices firm: H100 20d $3.07, B200 20d $9.26 (Ornn, Reported); Nebius B300 spot $12.19 after removing its cap (Reported). Monetization softening: Anthropic +47% QoQ, rev/compute 1.72x (Confirmed); Ramp Q4 +15–25% (Reported; Pies disputes sample).",
    "score": 18.2
   },
   "D": {
    "title": "Physical constraints",
-   "read": "Grid/permit attrition red and spreading: Texas freeze now covers on-site power air permits (SA: 6 campuses, 8.7 GW, ~1-qtr slip; Reported); Google Finland sites halted pending EIA. Demand-caused cancellations: none (green).",
+   "read": "Grid/permit attrition red and now political: Texas (~27% of US DC GW per Wells Fargo, Reported) elected a governor pledging a moratorium on new approvals; Gerstner: 10–15 GW of ~43 GW 2027 at risk (Reported). Demand-caused cancellations: none (Oracle–Tencent was export policy).",
    "score": 57.1
   },
   "E": {
    "title": "Macro & markets",
-   "read": "42 Macro INFLATION (Oct 31 weekly), risk-off 61%; SOX below its 200d, AI breadth 25/99 above 50d (Oct 30) on the red line; 10y 4.91% (Nov 2); midterms today; margin debt near records.",
+   "read": "42 Macro INFLATION, risk-off 65% (Nov 3 Leadoff); SOX 1.9% below its 200d, breadth 26/99 (Nov 3); HY OAS 3.43%; Democrats took Congress (Reported) — E6 amber red-candidate.",
    "score": 50.0
   }
  },
- "key_takeaway": "No change: 47.5 AMBER for a fifth day. Anthropic's S-1/A-1 shows growth slowing (+47% QoQ, revenue per $1 of compute 1.72x from 2.08x) into ~$895B of take-or-pay, so C3 leans Watch-negative inside amber; GPU rents and memory stay firm, and E4 breadth is still one name from red into midterms and AMD Q3.",
+ "key_takeaway": "No change: 47.5 AMBER for a sixth day. The midterms moved the risk from demand to permits: Democrats took both chambers (Reported) and Texas elected a governor pledging a data-center moratorium (AP result Confirmed; pledge Reported); Gerstner says 10–15 GW of ~43 GW due in 2027 may not come online (Reported). Demand legs firmed: AMD raised its 2027 frame (Confirmed) and GPU rents rose again. E4 (26/99) and E6 are the two red-candidates; E4 + E6 red → 50.8 RED.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
@@ -303,16 +303,12 @@
  ],
  "next_prints": [
   {
-   "when": "Tue Nov 3",
-   "what": "US midterms (E6/T-17) · AMD Q3 after close"
-  },
-  {
    "when": "Wed Nov 4",
-   "what": "T-17 checkpoint; Treasury QRA; T-07 decided on Nov 3 Farside print; Macro MWF breadth (E4)"
+   "what": "Nov 4 42 Macro Leadoff (same-hour gate); ADP, ISM services; QRA; ARM/QCOM earnings"
   },
   {
    "when": "Thu Nov 5",
-   "what": "IREN earnings; AT&S"
+   "what": "IREN earnings; AT&S; T-07 re-check on Farside"
   },
   {
    "when": "Fri Nov 6",
@@ -320,7 +316,11 @@
   },
   {
    "when": "Tue Nov 10",
-   "what": "TSMC October revenue (A4); October CPI; ~Anthropic roadshow (Reported)"
+   "what": "TSMC October revenue (A4); October CPI; KYEC; ~Anthropic roadshow (Reported)"
+  },
+  {
+   "when": "Thu Nov 12",
+   "what": "Nebius earnings (B1)"
   }
  ],
  "methodology": {

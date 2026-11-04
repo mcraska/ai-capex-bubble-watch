@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-03",
+ "as_of": "2026-11-04",
  "series": [
   {
    "date": "2026-10-18",
@@ -318,6 +318,26 @@
    },
    "composite_pre_A8_28row": 49.2,
    "note": "No change; Anthropic S-1/A-1 Q3 +47% QoQ, rev/compute 1.72x, ~$895B take-or-pay (C3 lean Watch-negative, B4 red held); rents firm (B200 20d $9.18)"
+  },
+  {
+   "date": "2026-11-04",
+   "composite": 47.5,
+   "points": 29.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 13,
+    "R": 6
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 50.0
+   },
+   "composite_pre_A8_28row": 49.2,
+   "note": "No change; midterms: TX moratorium pledge, Gerstner 10–15 GW of ~43 GW 2027 at risk (D2a red, E6 amber red-candidate); AMD raised 2027 (A5 green); rents firm (B200 20d $9.26)"
   }
  ],
  "method_changes": [
