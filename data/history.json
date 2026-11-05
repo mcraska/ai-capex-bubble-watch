@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "series": [
   {
    "date": "2026-10-18",
@@ -338,6 +338,26 @@
    },
    "composite_pre_A8_28row": 49.2,
    "note": "No change; midterms: TX moratorium pledge, Gerstner 10–15 GW of ~43 GW 2027 at risk (D2a red, E6 amber red-candidate); AMD raised 2027 (A5 green); rents firm (B200 20d $9.26)"
+  },
+  {
+   "date": "2026-11-05",
+   "composite": 49.2,
+   "points": 30.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 12,
+    "R": 7
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 58.3
+   },
+   "composite_pre_A8_28row": 50.8,
+   "note": "E4 A→R; SOX 10,268.65 Nov 4 −5.1% below 200d, breadth 20/99; composite 47.5→49.2 AMBER; nearest flip E5/E6 → 50.8 RED"
   }
  ],
  "method_changes": [

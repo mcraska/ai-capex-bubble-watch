@@ -1,36 +1,44 @@
 {
- "composite": 47.5,
+ "composite": 49.2,
  "weight": 61,
- "points": 29.0,
+ "points": 30.0,
  "counts": {
   "G": 10,
-  "A": 13,
-  "R": 6
+  "A": 12,
+  "R": 7
  },
  "bycat": {
   "A": 28.6,
   "B": 76.5,
   "C": 18.2,
   "D": 57.1,
-  "E": 50.0
+  "E": 58.3
  },
  "unweighted_amber_red_share": 65.5,
- "if_B2_red": 47.5,
+ "if_B2_red": 49.2,
  "if_E4_red": 49.2,
- "composite_prior_26row": 49.1,
+ "if_E4_and_E5_red": 50.8,
+ "if_E4_and_E6_red": 50.8,
+ "composite_pre_A8_28row": 50.8,
+ "pre_A8_weight": 59,
+ "pre_A8_points": 30.0,
+ "composite_prior_26row": 50.9,
  "prior_weight": 56,
- "prior_points": 27.5,
- "as_of": "2026-11-04",
+ "prior_points": 28.5,
+ "rows": 29,
+ "as_of": "2026-11-05",
  "band": "AMBER",
  "nearest_flip": {
-  "id": "E4",
-  "if_red": 49.2,
-  "note": "E4 red alone → 49.2 AMBER (breadth 26/99 on Nov 3; red <25). E4 + E6 red or E4 + E5 red → 50.8 RED. B6 red alone → 50.0 RED. E5 red = Risk Matrix DEFLATION only."
+  "id": "E5/E6",
+  "if_red": 50.8,
+  "note": "E4 already RED. E5 red (Risk Matrix DEFLATION only) or E6 red → 50.8 RED. B6 red alone → 51.6 RED."
  },
  "dod": {
-  "delta": 0.0,
-  "color_changes": [],
-  "note": "No color change vs 11-03 (47.5 AMBER). Readings refreshed within color: A5 green (AMD Q3 demand > supply on wafers/substrates/packaging/memory, Confirmed). B2 red held (ORCL CDS 294.4bp, Reported; IG tech OAS 76→108bp per Dale; ~$1T AI debt pipeline, Reported; Meta up to $25B bond, Reported). B4 red held (Polymarket top-IPO odds 62%→28%, Reported). C1 green (Ornn H100 20d $3.07, B200 20d $9.26 Nov 3; Nebius B300 spot $12.19, Reported). D2a red held (TX moratorium pledge; Gerstner 10–15 GW of ~43 GW 2027). D2b green (Oracle–Tencent $7B cancel = export policy, not demand). E6 amber red-candidate (Nov 4 checkpoint, no escalation)."
+  "delta": 1.7,
+  "color_changes": [
+   "E4 A→R"
+  ],
+  "note": "SHIFTS: E4 A→R. Composite 47.5 → 49.2 AMBER (+1.7; still <50). SOX 10,268.65 Nov 4 closed −5.1% below 200d 10,819.6 with AI thematic breadth 20/99 above 50d (from 26/99 Nov 3) — both red legs met. −30% from high not hit (−29.8%; −30% line ≈10,244). E6 unchanged amber HOLD (local ballots, not TX statewide). Korea memory selloff = equity color only (no board flip). Nearest RED: E5 or E6 with E4 already red → 50.8."
  },
  "indicators": [
   {
@@ -237,9 +245,9 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,600 (Nov 3) <200d 10,807, −27.6% hi; 26/99 >50d (Nov 3) EDGE",
+   "reading": "SOX 10,269 (Nov 4) <200d 10,820 (−5.1%); 20/99 >50d → RED",
    "weight": 2,
-   "color": "A"
+   "color": "R"
   },
   {
    "id": "E5",
@@ -270,31 +278,31 @@
  "buckets": {
   "A": {
    "title": "Capex intent & spend",
-   "read": "Spending and the supply chain still accelerating: AMD Q3 DC +97%, 2027 revenue >80% with server doubling and demand above secured supply (Confirmed); server OEMs (A8) strong. The weak spot is funding (capex/OCF ~115%).",
+   "read": "Spending and the supply chain still accelerating: AMD Q3 DC demand above secured supply (Confirmed); server OEMs (A8) strong. The weak spot is funding (capex/OCF ~115%).",
    "score": 28.6
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Still where the stress is: IG tech spreads 76→108bp since end-2025 and ~$1T more AI debt coming (Dale; Reported); Oracle ~$20B raise at a discount, Meta up to $25B bond (Reported); ORCL CDS 294bp. Anthropic range blank; Polymarket top-IPO odds 62%→28% (Reported). No default or pulled IPO yet.",
+   "read": "Still where the stress is: IG tech spreads 76→108bp and ~$1T more AI debt coming (Dale; Reported); ORCL CDS 294bp; Anthropic range blank; Polymarket top-IPO odds 62%→28% (Reported). No default or pulled IPO yet.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "Unit prices firm: H100 20d $3.07, B200 20d $9.26 (Ornn, Reported); Nebius B300 spot $12.19 after removing its cap (Reported). Monetization softening: Anthropic +47% QoQ, rev/compute 1.72x (Confirmed); Ramp Q4 +15–25% (Reported; Pies disputes sample).",
+   "read": "Unit prices firm: H100 20d $3.07, B200 20d $9.26 (Ornn, Reported); Nebius B300 spot $12.19 (Reported). Monetization softening: Anthropic +47% QoQ, rev/compute 1.72x (Confirmed); Ramp Q4 +15–25% (Reported).",
    "score": 18.2
   },
   "D": {
    "title": "Physical constraints",
-   "read": "Grid/permit attrition red and now political: Texas (~27% of US DC GW per Wells Fargo, Reported) elected a governor pledging a moratorium on new approvals; Gerstner: 10–15 GW of ~43 GW 2027 at risk (Reported). Demand-caused cancellations: none (Oracle–Tencent was export policy).",
+   "read": "Grid/permit attrition red and political: Texas elected a governor pledging a data-center moratorium; Gerstner: 10–15 GW of ~43 GW 2027 at risk (Reported). Demand-caused cancellations: none (Oracle–Tencent was export policy).",
    "score": 57.1
   },
   "E": {
    "title": "Macro & markets",
-   "read": "42 Macro INFLATION, risk-off 65% (Nov 3 Leadoff); SOX 1.9% below its 200d, breadth 26/99 (Nov 3); HY OAS 3.43%; Democrats took Congress (Reported) — E6 amber red-candidate.",
-   "score": 50.0
+   "read": "E4 flipped RED: SOX 10,268.65 Nov 4 −5.1% below 200d with AI breadth 20/99 above 50d (Confirmed closes). 42 Macro INFLATION, risk-off 65%; E6 amber HOLD red-candidate (local ballots). Category stress 58.3.",
+   "score": 58.3
   }
  },
- "key_takeaway": "No change: 47.5 AMBER for a sixth day. The midterms moved the risk from demand to permits: Democrats took both chambers (Reported) and Texas elected a governor pledging a data-center moratorium (AP result Confirmed; pledge Reported); Gerstner says 10–15 GW of ~43 GW due in 2027 may not come online (Reported). Demand legs firmed: AMD raised its 2027 frame (Confirmed) and GPU rents rose again. E4 (26/99) and E6 are the two red-candidates; E4 + E6 red → 50.8 RED.",
+ "key_takeaway": "SHIFTS: E4 A→R. Composite 49.2 AMBER (30.0 ÷ 61; 7R/12A/10G; DoD +1.7 from 47.5). SOX 10,268.65 Nov 4 closed −5.1% below its 200d with AI thematic breadth 20/99 above 50d — both red legs met; −30% from high not hit. Band still AMBER (RED ≥50). Nearest RED: E5 or E6 with E4 already red → 50.8. E6 unchanged amber HOLD. Inform only — no trades.",
  "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
  "decisive": [
   "GPU rents breaking lower (T-14)",
@@ -303,12 +311,8 @@
  ],
  "next_prints": [
   {
-   "when": "Wed Nov 4",
-   "what": "Nov 4 42 Macro Leadoff (same-hour gate); ADP, ISM services; QRA; ARM/QCOM earnings"
-  },
-  {
    "when": "Thu Nov 5",
-   "what": "IREN earnings; AT&S; T-07 re-check on Farside"
+   "what": "IREN earnings; AT&S; T-07 re-check on Farside (today)"
   },
   {
    "when": "Fri Nov 6",
@@ -330,10 +334,5 @@
   "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
   "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 → 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
  },
- "if_E4_and_E5_red": 50.8,
- "rows": 29,
- "composite_pre_A8_28row": 49.2,
- "pre_A8_weight": 59,
- "pre_A8_points": 29.0,
- "if_B6_red": 50.0
+ "if_B6_red": 51.6
 }
