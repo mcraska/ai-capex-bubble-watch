@@ -4,7 +4,7 @@ Public dashboard for Matt’s AI Capex Bubble Watch: scored leading indicators o
 
 **Live:** https://mcraska.github.io/ai-capex-bubble-watch/
 
-**As of:** 2026-11-01 · **Composite:** 47.5 **AMBER** (29.0 ÷ 61; 2.5 pt under RED) · 6R / 13A / 10G · no change vs 10-31 (pre-A8 like-for-like 49.2)
+**As of:** 2026-11-06 · **Composite:** 49.2 **AMBER** (30.0 ÷ 61; 0.8 pt under RED) · 7R / 12A / 10G · no change vs 11-05 (pre-A8 like-for-like 50.8)
 
 Inform only. No trades. Not investment advice.
 

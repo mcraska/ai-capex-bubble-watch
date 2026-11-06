@@ -1,9 +1,7 @@
 {
- "as_of": "2026-11-05",
+ "as_of": "2026-11-06",
  "series": [
   {
-   "date": "2026-10-18",
-   "composite": 44.9,
    "points": 26.5,
    "weight": 59,
    "counts": {
@@ -17,11 +15,29 @@
     "C": 9.1,
     "D": 57.1,
     "E": 50.0
-   }
+   },
+   "date": "2026-10-18",
+   "composite": 44.9
   },
   {
+   "points": 27.5,
+   "weight": 59,
+   "counts": {
+    "G": 9,
+    "A": 14,
+    "R": 5
+   },
+   "bycat": {
+    "A": 33.3,
+    "B": 67.6,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 50.0
+   },
    "date": "2026-10-19",
-   "composite": 46.6,
+   "composite": 46.6
+  },
+  {
    "points": 27.5,
    "weight": 59,
    "counts": {
@@ -35,29 +51,29 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-20",
-   "composite": 46.6,
-   "points": 27.5,
+   "composite": 46.6
+  },
+  {
+   "points": 29.0,
    "weight": 59,
    "counts": {
     "G": 9,
-    "A": 14,
-    "R": 5
+    "A": 13,
+    "R": 6
    },
    "bycat": {
     "A": 33.3,
-    "B": 67.6,
+    "B": 76.5,
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-21",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -71,11 +87,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-22",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -89,11 +105,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-23",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -107,11 +123,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-24",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -125,11 +141,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-25",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -143,11 +159,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-26",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -161,11 +177,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-27",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -179,11 +195,29 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-28",
-   "composite": 49.2,
+   "composite": 49.2
+  },
+  {
+   "points": 29.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 13,
+    "R": 6
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 50.0
+   },
+   "date": "2026-10-29",
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 59,
    "counts": {
@@ -197,11 +231,11 @@
     "C": 18.2,
     "D": 57.1,
     "E": 50.0
-   }
-  },
-  {
+   },
    "date": "2026-10-29",
-   "composite": 47.5,
+   "composite": 49.2
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -216,12 +250,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "Method change: A8 added (weight 59→61); like-for-like 49.2"
-  },
-  {
    "date": "2026-10-30",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -236,12 +268,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; AMZN capex held, 2027 up; funding stress (Big-4 capex/OCF ~115%)"
-  },
-  {
    "date": "2026-10-31",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -256,12 +286,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; funding tightened within color (OpenAI raise cut, Anthropic BB expected, neocloud bond shutout, AMZN ~$80B secured facility); SOX below 200d"
-  },
-  {
    "date": "2026-11-01",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -276,12 +304,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; Korea Oct chips +259% YoY (A6 green reinforced); Oracle caps new funding $20B thru FY30 (B2 red held); B6 amber red-candidate"
-  },
-  {
    "date": "2026-11-02",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -296,12 +322,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; E4 breadth 25/99 on red line; C1 rents firm (B200 20d $9.11); SA 2028 midterm exposure 5.7–30 GW (E6 amber)"
-  },
-  {
    "date": "2026-11-03",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -316,12 +340,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; Anthropic S-1/A-1 Q3 +47% QoQ, rev/compute 1.72x, ~$895B take-or-pay (C3 lean Watch-negative, B4 red held); rents firm (B200 20d $9.18)"
-  },
-  {
    "date": "2026-11-04",
-   "composite": 47.5,
+   "composite": 47.5
+  },
+  {
    "points": 29.0,
    "weight": 61,
    "counts": {
@@ -336,12 +358,10 @@
     "D": 57.1,
     "E": 50.0
    },
-   "composite_pre_A8_28row": 49.2,
-   "note": "No change; midterms: TX moratorium pledge, Gerstner 10–15 GW of ~43 GW 2027 at risk (D2a red, E6 amber red-candidate); AMD raised 2027 (A5 green); rents firm (B200 20d $9.26)"
+   "date": "2026-11-04",
+   "composite": 47.5
   },
   {
-   "date": "2026-11-05",
-   "composite": 49.2,
    "points": 30.0,
    "weight": 61,
    "counts": {
@@ -356,14 +376,26 @@
     "D": 57.1,
     "E": 58.3
    },
-   "composite_pre_A8_28row": 50.8,
-   "note": "E4 A→R; SOX 10,268.65 Nov 4 −5.1% below 200d, breadth 20/99; composite 47.5→49.2 AMBER; nearest flip E5/E6 → 50.8 RED"
-  }
- ],
- "method_changes": [
+   "date": "2026-11-05",
+   "composite": 49.2
+  },
   {
-   "date": "2026-10-29",
-   "change": "A8 Server OEM earnings added (w2, green); total weight 59 → 61; composite 49.2 → 47.5 by denominator only"
+   "points": 30.0,
+   "weight": 61,
+   "counts": {
+    "G": 10,
+    "A": 12,
+    "R": 7
+   },
+   "bycat": {
+    "A": 28.6,
+    "B": 76.5,
+    "C": 18.2,
+    "D": 57.1,
+    "E": 58.3
+   },
+   "date": "2026-11-06",
+   "composite": 49.2
   }
  ]
 }

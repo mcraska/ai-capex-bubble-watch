@@ -26,7 +26,7 @@
  "prior_weight": 56,
  "prior_points": 28.5,
  "rows": 29,
- "as_of": "2026-11-05",
+ "as_of": "2026-11-06",
  "band": "AMBER",
  "nearest_flip": {
   "id": "E5/E6",
@@ -34,11 +34,9 @@
   "note": "E4 already RED. E5 red (Risk Matrix DEFLATION only) or E6 red → 50.8 RED. B6 red alone → 51.6 RED."
  },
  "dod": {
-  "delta": 1.7,
-  "color_changes": [
-   "E4 A→R"
-  ],
-  "note": "SHIFTS: E4 A→R. Composite 47.5 → 49.2 AMBER (+1.7; still <50). SOX 10,268.65 Nov 4 closed −5.1% below 200d 10,819.6 with AI thematic breadth 20/99 above 50d (from 26/99 Nov 3) — both red legs met. −30% from high not hit (−29.8%; −30% line ≈10,244). E6 unchanged amber HOLD (local ballots, not TX statewide). Korea memory selloff = equity color only (no board flip). Nearest RED: E5 or E6 with E4 already red → 50.8."
+  "delta": 0.0,
+  "color_changes": [],
+  "note": "SHIFTS: none. Composite 49.2 AMBER unchanged. Nov 5 SOX −12.25% to 9,011, −16.8% below its 200-day and 38.4% from its high; AI breadth fell to 13 of 99 above the 50-day. E4 was already red. Nearest RED: E5 or E6 → 50.8."
  },
  "indicators": [
   {
@@ -221,7 +219,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.91; TIPS 2.62 (Nov 2); ^TNX 4.95, MOVE 99.97 (Nov 3)",
+   "reading": "10y 4.84 (Nov 5 ^TNX); MOVE 97.92; TIPS 2.64 (Nov 4)",
    "weight": 2,
    "color": "A"
   },
@@ -229,7 +227,7 @@
    "id": "E2",
    "bucket": "E",
    "name": "HY / IG spreads",
-   "reading": "HY OAS 3.43% (Nov 2; +29bp vs Oct 28, +33bp m/m); IG 0.94",
+   "reading": "HY OAS 3.32% (Nov 4; +18bp vs Oct 28); IG 0.91 (FRED)",
    "weight": 2,
    "color": "A"
   },
@@ -237,7 +235,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.67 (Oct 30); DXY 101.33 Nov 4 a.m.; RRP $0.4B; NFCI −0.49",
+   "reading": "Broad USD 121.67 (Oct 30); DXY 101.55 Nov 5; RRP $0.1B; NFCI −0.46",
    "weight": 1,
    "color": "A"
   },
@@ -245,7 +243,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,269 (Nov 4) <200d 10,820 (−5.1%); 20/99 >50d → RED",
+   "reading": "SOX 9,011 (Nov 5) <200d 10,824 (−16.8%), −38.4% hi; 13/99 >50d → RED",
    "weight": 2,
    "color": "R"
   },
@@ -278,32 +276,32 @@
  "buckets": {
   "A": {
    "title": "Capex intent & spend",
-   "read": "Spending and the supply chain still accelerating: AMD Q3 DC demand above secured supply (Confirmed); server OEMs (A8) strong. The weak spot is funding (capex/OCF ~115%).",
+   "read": "IREN confirms delivery timing, not weak demand; AT&S pricing and AMD-backed substrate commitments reinforce supply tightness. Big-4 capex/OCF near 115% remains the weak spot.",
    "score": 28.6
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Still where the stress is: IG tech spreads 76→108bp and ~$1T more AI debt coming (Dale; Reported); ORCL CDS 294bp; Anthropic range blank; Polymarket top-IPO odds 62%→28% (Reported). No default or pulled IPO yet.",
+   "read": "Neocloud and IPO stress remain dominant. Anthropic investors reportedly seek a lower valuation or delay; TeraWulf needs a Google backstop; ING is reportedly auctioning data-center loans. No default or qualifying IPO pull yet.",
    "score": 76.5
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "Unit prices firm: H100 20d $3.07, B200 20d $9.26 (Ornn, Reported); Nebius B300 spot $12.19 (Reported). Monetization softening: Anthropic +47% QoQ, rev/compute 1.72x (Confirmed); Ramp Q4 +15–25% (Reported).",
+   "read": "GPU rents remain firm: H100 20-session $3.12 and B200 $9.39 through Nov 5 (reported). IREN contracts show customer prepayment and higher H100 pricing; demand-caused cancellations remain absent.",
    "score": 18.2
   },
   "D": {
    "title": "Physical constraints",
-   "read": "Grid/permit attrition red and political: Texas elected a governor pledging a data-center moratorium; Gerstner: 10–15 GW of ~43 GW 2027 at risk (Reported). Demand-caused cancellations: none (Oracle–Tencent was export policy).",
+   "read": "Permit and grid constraints remain red. Microsoft’s reported Nscale unsigned LOI exit is a watch hit, not demand-driven capacity retreat. ING’s Jupiter loan slice carries power and permit delays, not demand/cost.",
    "score": 57.1
   },
   "E": {
    "title": "Macro & markets",
-   "read": "E4 flipped RED: SOX 10,268.65 Nov 4 −5.1% below 200d with AI breadth 20/99 above 50d (Confirmed closes). 42 Macro INFLATION, risk-off 65%; E6 amber HOLD red-candidate (local ballots). Category stress 58.3.",
+   "read": "The Nov 5 rout deepened an already-red E4: SOX closed 16.8% below its 200-day with breadth 13 of 99. Hot October jobs reinforce 42 Macro’s inflation frame; E5 remains amber pending a Nov 6 Leadoff.",
    "score": 58.3
   }
  },
- "key_takeaway": "SHIFTS: E4 A→R. Composite 49.2 AMBER (30.0 ÷ 61; 7R/12A/10G; DoD +1.7 from 47.5). SOX 10,268.65 Nov 4 closed −5.1% below its 200d with AI thematic breadth 20/99 above 50d — both red legs met; −30% from high not hit. Band still AMBER (RED ≥50). Nearest RED: E5 or E6 with E4 already red → 50.8. E6 unchanged amber HOLD. Inform only — no trades.",
- "pattern": "Classic early stage of a capex bust: financing cracks while demand still looks intact. In telecom 2000–01, shale 2014–15 and crypto mining 2022, credit spreads on the most-levered builders and the unit price of capacity turned first; supplier volumes turned last. Today the levered edge (neoclouds, IPO candidates, Oracle) is under stress, but unit economics (GPU rents) and the supply chain (TSMC, server OEMs, ODMs, Korea exports) have not rolled. First monetization crack showing (C2 amber).",
+ "key_takeaway": "SHIFTS: none. Composite 49.2 AMBER (30.0 ÷ 61; 7R/12A/10G; 0.8 under RED). The Nov 5 AI rout deepened E4, already red: SOX −16.8% below its 200-day, −38.4% from its high, and only 13 of 99 AI names above their 50-day. Financing and physical delivery remain stressed while GPU rents and supplier demand hold. Nearest RED: E5 or E6 → 50.8. Inform only — no trades.",
+ "pattern": "Financing and permitting keep cracking before supplier volumes. Credit spreads on levered builders, the IPO window and data-center permits are under stress, while GPU rents, IREN pricing and AT&S/AMD supply commitments have not rolled. That keeps the immediate hinge between a positioning reset and a physical-demand break.",
  "decisive": [
   "GPU rents breaking lower (T-14)",
   "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
@@ -311,20 +309,20 @@
  ],
  "next_prints": [
   {
-   "when": "Thu Nov 5",
-   "what": "IREN earnings; AT&S; T-07 re-check on Farside (today)"
-  },
-  {
-   "when": "Fri Nov 6",
-   "what": "October jobs report"
+   "when": "Mon Nov 9",
+   "what": "Nov 6 ETF flows (T-07); VAMS recreation whipsaw check"
   },
   {
    "when": "Tue Nov 10",
-   "what": "TSMC October revenue (A4); October CPI; KYEC; ~Anthropic roadshow (Reported)"
+   "what": "October CPI; TSMC October revenue; KYEC"
   },
   {
    "when": "Thu Nov 12",
-   "what": "Nebius earnings (B1)"
+   "what": "Nebius earnings"
+  },
+  {
+   "when": "Thu Nov 19",
+   "what": "ING data-center loan auction bids"
   }
  ],
  "methodology": {
