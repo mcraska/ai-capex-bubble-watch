@@ -1,42 +1,49 @@
 {
- "composite": 49.2,
+ "composite": 51.6,
  "weight": 61,
- "points": 30.0,
+ "points": 31.5,
  "counts": {
   "G": 10,
-  "A": 12,
-  "R": 7
+  "A": 11,
+  "R": 8
  },
  "bycat": {
   "A": 28.6,
-  "B": 76.5,
+  "B": 85.3,
   "C": 18.2,
   "D": 57.1,
   "E": 58.3
  },
  "unweighted_amber_red_share": 65.5,
- "if_B2_red": 49.2,
- "if_E4_red": 49.2,
- "if_E4_and_E5_red": 50.8,
- "if_E4_and_E6_red": 50.8,
- "composite_pre_A8_28row": 50.8,
+ "if_B2_red": 51.6,
+ "if_E4_red": 51.6,
+ "if_E4_and_E5_red": 53.3,
+ "if_E4_and_E6_red": 53.3,
+ "composite_pre_A8_28row": 53.4,
  "pre_A8_weight": 59,
- "pre_A8_points": 30.0,
- "composite_prior_26row": 50.9,
+ "pre_A8_points": 31.5,
+ "composite_prior_26row": 53.6,
  "prior_weight": 56,
- "prior_points": 28.5,
+ "prior_points": 30.0,
  "rows": 29,
- "as_of": "2026-11-06",
- "band": "AMBER",
+ "as_of": "2026-11-07",
+ "band": "RED",
+ "if_B6_red": 51.6,
  "nearest_flip": {
   "id": "E5/E6",
-  "if_red": 50.8,
-  "note": "E4 already RED. E5 red (Risk Matrix DEFLATION only) or E6 red → 50.8 RED. B6 red alone → 51.6 RED."
+  "if_red": 53.3,
+  "note": "Composite already RED. E5 red (Risk Matrix DEFLATION only) or E6 red → 53.3. Reverts to 49.2 AMBER only if the OpenAI first close is denied/corrected or shown ≥$15B; E4 recovering alone → 50.0, still RED."
  },
  "dod": {
-  "delta": 0.0,
-  "color_changes": [],
-  "note": "SHIFTS: none. Composite 49.2 AMBER unchanged. Nov 5 SOX −12.25% to 9,011, −16.8% below its 200-day and 38.4% from its high; AI breadth fell to 13 of 99 above the 50-day. E4 was already red. Nearest RED: E5 or E6 → 50.8."
+  "delta": 2.4,
+  "color_changes": [
+   {
+    "id": "B6",
+    "from": "A",
+    "to": "R"
+   }
+  ],
+  "note": "SHIFTS: B6 Lab funding amber→red (Reported). Bloomberg reports OpenAI's ~$11B first close wired at $1.25T, under the ~$15B red gate set Nov 1; round still open toward ~$20B. Composite 49.2 AMBER → 51.6 RED (+2.4), the first RED reading."
  },
  "indicators": [
   {
@@ -147,15 +154,15 @@
    "id": "B6",
    "bucket": "B",
    "name": "Lab funding & ratings",
-   "reading": "OpenAI target cut $30B→$20B, ~$11B in; Anth. BB expected (Rep.)",
+   "reading": "OpenAI ~$11B first close wired, $1.25T; <$15B gate met; round open (Rep.)",
    "weight": 3,
-   "color": "A"
+   "color": "R"
   },
   {
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.07; B200 20d $9.26 (Nov 3, Ornn); NBIS B300 spot $12.19 (Rep.)",
+   "reading": "H100 20d $3.14; B200 20d $9.44 (Nov 6, Ornn); SA: 1-yr H100 +~21% since Mar (Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -243,7 +250,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 9,011 (Nov 5) <200d 10,824 (−16.8%), −38.4% hi; 13/99 >50d → RED",
+   "reading": "SOX 9,390 (Nov 6) −13.3% vs 200d, −35.8% hi; 13/99 >50d (Nov 5) → RED",
    "weight": 2,
    "color": "R"
   },
@@ -251,7 +258,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Nov 3 Leadoff PDF); risk-off 65%; red=DEFLATION",
+   "reading": "INFLATION (Nov 6 Leadoff PDF); risk-off 63%; KISS 95/0/0/5; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -276,32 +283,32 @@
  "buckets": {
   "A": {
    "title": "Capex intent & spend",
-   "read": "IREN confirms delivery timing, not weak demand; AT&S pricing and AMD-backed substrate commitments reinforce supply tightness. Big-4 capex/OCF near 115% remains the weak spot.",
+   "read": "Big-4 capex/OCF near 115% remains the weak spot; supplier orders, AMD demand>supply and server OEM AI growth stay green. Reuters reports NVDA financing SPIL CoWoS expansion (unconfirmed).",
    "score": 28.6
   },
   "B": {
    "title": "Financing & credit",
-   "read": "Neocloud and IPO stress remain dominant. Anthropic investors reportedly seek a lower valuation or delay; TeraWulf needs a Google backstop; ING is reportedly auctioning data-center loans. No default or qualifying IPO pull yet.",
-   "score": 76.5
+   "read": "First RED driver. OpenAI's ~$11B first close at $1.25T fell under the ~$15B gate (Reported). Anthropic buyers reportedly talk ~$1.1–1.3T; CoreWeave 2032s yield >16% and 5y CDS ~1,155bp (Reported). No default or qualifying IPO pull yet.",
+   "score": 85.3
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "GPU rents remain firm: H100 20-session $3.12 and B200 $9.39 through Nov 5 (reported). IREN contracts show customer prepayment and higher H100 pricing; demand-caused cancellations remain absent.",
+   "read": "GPU rents firm: H100 20-session $3.14, B200 $9.44 through Nov 6 (Ornn, Reported). SemiAnalysis: 1-yr H100 contracts +~21% since March, ≤2–3 GW of ~50 GW 2027 capacity at risk. No demand-caused cancellations.",
    "score": 18.2
   },
   "D": {
    "title": "Physical constraints",
-   "read": "Permit and grid constraints remain red. Microsoft’s reported Nscale unsigned LOI exit is a watch hit, not demand-driven capacity retreat. ING’s Jupiter loan slice carries power and permit delays, not demand/cost.",
+   "read": "Permit and grid constraints remain red (Texas governor-elect pause language is intent, not policy). No demand-cited signed-capacity cancellation; T-16 Watch hit only.",
    "score": 57.1
   },
   "E": {
    "title": "Macro & markets",
-   "read": "The Nov 5 rout deepened an already-red E4: SOX closed 16.8% below its 200-day with breadth 13 of 99. Hot October jobs reinforce 42 Macro’s inflation frame; E5 remains amber pending a Nov 6 Leadoff.",
+   "read": "E4 stays deep red (SOX 9,390 Nov 6, −13.3% vs 200d) despite Friday's +4% bounce. 42 Macro Nov 6 Leadoff PDF: INFLATION, risk-off 63%; official KISS now 95/0/0/5 (VT bearish). E5 amber; red needs DEFLATION.",
    "score": 58.3
   }
  },
- "key_takeaway": "SHIFTS: none. Composite 49.2 AMBER (30.0 ÷ 61; 7R/12A/10G; 0.8 under RED). The Nov 5 AI rout deepened E4, already red: SOX −16.8% below its 200-day, −38.4% from its high, and only 13 of 99 AI names above their 50-day. Financing and physical delivery remain stressed while GPU rents and supplier demand hold. Nearest RED: E5 or E6 → 50.8. Inform only — no trades.",
- "pattern": "Financing and permitting keep cracking before supplier volumes. Credit spreads on levered builders, the IPO window and data-center permits are under stress, while GPU rents, IREN pricing and AT&S/AMD supply commitments have not rolled. That keeps the immediate hinge between a positioning reset and a physical-demand break.",
+ "key_takeaway": "SHIFTS: B6 amber→red. Composite 51.6 RED (31.5 ÷ 61; 8R/11A/10G; +2.4), the first RED. OpenAI's ~$11B first close at $1.25T is under the ~$15B gate (Reported; primary confirmation pending). Financing is the stress; GPU rents and supplier demand still hold. Reverts to 49.2 AMBER only if the close is denied or shown ≥$15B; E5 or E6 red → 53.3. Inform only — no trades.",
+ "pattern": "Financing breaks first. The lab-funding and neocloud-credit legs have now pushed the composite into RED while GPU rents, contract prices and supplier commitments are still firm — a funding-before-orders sequence, not yet a physical-demand bust.",
  "decisive": [
   "GPU rents breaking lower (T-14)",
   "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
@@ -310,11 +317,15 @@
  "next_prints": [
   {
    "when": "Mon Nov 9",
-   "what": "Nov 6 ETF flows (T-07); VAMS recreation whipsaw check"
+   "what": "Nov 6 ETF flows (T-07); VAMS recreation whipsaw check; Leadoff"
   },
   {
    "when": "Tue Nov 10",
-   "what": "October CPI; TSMC October revenue; KYEC"
+   "what": "October CPI; TSMC October revenue; KYEC/MOPS ODM"
+  },
+  {
+   "when": "Wed Nov 11",
+   "what": "Korea Nov 1–10 exports; CoreWeave Q3 (reported date)"
   },
   {
    "when": "Thu Nov 12",
@@ -331,6 +342,5 @@
   "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
   "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
   "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 → 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
- },
- "if_B6_red": 51.6
+ }
 }
