@@ -151,7 +151,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "ORCL CDS 294.4bp (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
+   "reading": "ORCL CDS 305bp Nov 5 (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
    "weight": 3,
    "color": "R"
   },
@@ -191,7 +191,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.16; B200 20d $9.51, spot $9.88 3-mo high (Nov 7, Ornn, Rep.)",
+   "reading": "H100 20d $3.18; B200 20d $9.59, spot $9.94 new 3-mo high (Nov 8, Ornn, Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -255,7 +255,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.84 (Nov 5 ^TNX); MOVE 97.92; TIPS 2.64 (Nov 4)",
+   "reading": "10y 4.86 (Nov 6 CMT); MOVE 92.77; TIPS 2.63 (Nov 6)",
    "weight": 2,
    "color": "A"
   },
@@ -287,7 +287,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Nov 6 Leadoff PDF); risk-off 63%; KISS 95/0/0/5; red=DEFLATION",
+   "reading": "INFLATION (Nov 7 ATH PDF); risk-off 64%; KISS 95/0/0/5; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -308,21 +308,17 @@
    "color": "A"
   }
  ],
- "as_of": "2026-11-08",
+ "as_of": "2026-11-09",
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: C1 (Ornn Nov 7 H100 20-session $3.16, B200 20-session $9.51, B200 spot $9.88 three-month high, Reported) and A1 (Census Sep computers/servers +27% YoY, Reported)."
+  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: C1 (Ornn Nov 8: B200 spot $9.94, a new three-month high, 20-session $9.59; H100 20-session $3.18; Reported), B2 (ORCL 5y CDS 305bp Nov 5, Reported, under the 325 Watch line), E1 (10y 4.86%, TIPS 2.63%, MOVE 92.77, Nov 6) and E5 (Nov 7 Around the Horn PDF: INFLATION, risk-off 64%)."
  },
- "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), second day. Financing is still the stress (B6 red on OpenAI's ~$11B first close, Reported); GPU rents firmed again with B200 at a 3-month high. Next tests: CoreWeave Q3 (Nov 10), Nebius (Nov 12), Anthropic price range. E5 or E6 red → 53.3. Inform only — no trades.",
+ "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), third day. Financing is still the stress (B6 red on OpenAI's ~$11B first close, Reported); B200 rent set another three-month high. CoreWeave Q3 after Tuesday's close is the first earnings test. E5 or E6 red → 53.3. Inform only — no trades.",
  "next_prints": [
   {
-   "when": "Mon Nov 9",
-   "what": "Nov 6 ETF flows (T-07); VAMS recreation run; Leadoff"
-  },
-  {
    "when": "Tue Nov 10",
-   "what": "October CPI; TSMC October revenue; CoreWeave Q3; KYEC/MOPS ODM"
+   "what": "October CPI; TSMC October revenue; CoreWeave Q3 (after close); KYEC/MOPS ODM"
   },
   {
    "when": "Wed Nov 11",
@@ -331,6 +327,10 @@
   {
    "when": "Thu Nov 12",
    "what": "Nebius Q3 (MSFT Vineland tranche test)"
+  },
+  {
+   "when": "Fri Nov 13",
+   "what": "October PPI; earliest Anthropic pricing (Reported)"
   },
   {
    "when": "Tue Nov 17",
