@@ -37,17 +37,17 @@
  "buckets": {
   "A": {
    "title": "Capex intent & spend",
-   "read": "Big-4 capex/OCF near 115% remains the weak spot; supplier orders, AMD demand>supply and server OEM AI growth stay green. Reuters reports NVDA financing SPIL CoWoS expansion (unconfirmed).",
+   "read": "Big-4 capex/OCF near 115% remains the weak spot; TSMC October revenue was a record +59.7% YoY and Taiwan server ODMs roughly doubled (Confirmed/Reported).",
    "score": 28.6
   },
   "B": {
    "title": "Financing & credit",
-   "read": "First RED driver. OpenAI's ~$11B first close at $1.25T fell under the ~$15B gate (Reported). Anthropic buyers reportedly talk ~$1.1–1.3T; CoreWeave 2032s yield >16% and 5y CDS ~1,155bp (Reported). No default or qualifying IPO pull yet.",
+   "read": "RED driver. OpenAI's ~$11B first close at $1.25T sits under the ~$15B gate (Reported). SoftBank booked a $3.73B loss on prepaid US AI-DC power equipment (Confirmed). CoreWeave 5y CDS >1,240bp into its Nov 10 Q3 (Reported). Anthropic's leaked $70–80 IPO range was retracted (Reported).",
    "score": 85.3
   },
   "C": {
    "title": "Demand & unit economics",
-   "read": "GPU rents firm: H100 20-session $3.14, B200 $9.44 through Nov 6 (Ornn, Reported). SemiAnalysis: 1-yr H100 contracts +~21% since March, ≤2–3 GW of ~50 GW 2027 capacity at risk. No demand-caused cancellations.",
+   "read": "GPU rents firm: H100 20-session $3.18, B200 $9.63 through Nov 9 (Ornn, Reported). No demand-caused cancellations.",
    "score": 18.2
   },
   "D": {
@@ -57,7 +57,7 @@
   },
   "E": {
    "title": "Macro & markets",
-   "read": "E4 stays deep red (SOX 9,390 Nov 6, −13.3% vs 200d) despite Friday's +4% bounce. 42 Macro Nov 6 Leadoff PDF: INFLATION, risk-off 63%; official KISS now 95/0/0/5 (VT bearish). E5 amber; red needs DEFLATION.",
+   "read": "E4 stays red (SOX −7.4% vs 200d Nov 9 after Monday's bounce). Hot October CPI (core +0.3%) lifted the 10y to ~4.94% (Reported). 42 Macro: INFLATION, risk-off 64%; KISS 95/0/0/5. E6 amber: Texas permit pause Confirmed, one of two states needed.",
    "score": 58.3
   }
  },
@@ -103,7 +103,7 @@
    "id": "A4",
    "bucket": "A",
    "name": "TSMC monthly rev + AI guide",
-   "reading": "Sep +54.6% YoY; AI CAGR 'probably higher'",
+   "reading": "Oct NT$586.9B +59.7% YoY, record month (TSMC, Conf.)",
    "weight": 1,
    "color": "G"
   },
@@ -127,7 +127,7 @@
    "id": "A7",
    "bucket": "A",
    "name": "Server ODM monthly sales",
-   "reading": "Sep YoY +77–100% (MoM −17 to −23%)",
+   "reading": "Oct Quanta +104%, Wistron +118%, Wiwynn +81% YoY (Conf./Rep.)",
    "weight": 1,
    "color": "G"
   },
@@ -175,7 +175,7 @@
    "id": "B5",
    "bucket": "B",
    "name": "Vendor fin. / circular / off-B/S",
-   "reading": "AMZN ~$80B secured supplier loan (10-Q, Conf.); NVDA Nscale guar. (Rep.)",
+   "reading": "SoftBank $3.73B US AI-DC power prepay loss (Conf.); CRWV CDS >1,240bp",
    "weight": 2,
    "color": "A"
   },
@@ -191,7 +191,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.18; B200 20d $9.59, spot $9.94 new 3-mo high (Nov 8, Ornn, Rep.)",
+   "reading": "H100 20d $3.18; B200 20d $9.63, spot $9.90 (Nov 9, Ornn, Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -255,7 +255,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.86 (Nov 6 CMT); MOVE 92.77; TIPS 2.63 (Nov 6)",
+   "reading": "10y 4.88 (Nov 9 CMT); TIPS 2.66; MOVE 85.98; CPI hot, 10y ~4.94 (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -279,7 +279,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 9,390 (Nov 6) −13.3% vs 200d, −35.8% hi; 13/99 >50d (Nov 5) → RED",
+   "reading": "SOX 10,034 (Nov 9) −7.4% vs 200d, −31.4% from high (Yahoo) → RED held",
    "weight": 2,
    "color": "R"
   },
@@ -295,7 +295,7 @@
    "id": "E6",
    "bucket": "E",
    "name": "Midterm policy risk (Nov 3)",
-   "reading": "D sweep (Rep.); Hinojosa won TX (AP), moratorium pledge; red-candidate",
+   "reading": "TX TCEQ permit pause Confirmed (1 of 2 states needed); red-candidate",
    "weight": 2,
    "color": "A"
   },
@@ -308,13 +308,13 @@
    "color": "A"
   }
  ],
- "as_of": "2026-11-09",
+ "as_of": "2026-11-10",
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: C1 (Ornn Nov 8: B200 spot $9.94, a new three-month high, 20-session $9.59; H100 20-session $3.18; Reported), B2 (ORCL 5y CDS 305bp Nov 5, Reported, under the 325 Watch line), E1 (10y 4.86%, TIPS 2.63%, MOVE 92.77, Nov 6) and E5 (Nov 7 Around the Horn PDF: INFLATION, risk-off 64%)."
+  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: A4 (TSMC October revenue +59.7% YoY, a record, Confirmed), A7 (Taiwan server ODMs ~2x YoY in October), B5 (SoftBank $3.73B loss on prepaid US AI data-center power equipment, Confirmed; CoreWeave 5y CDS >1,240bp, Reported), C1 (Ornn Nov 9: B200 20-session $9.63, H100 $3.18, Reported), E1 (10y 4.88% Nov 9; hot October CPI pushed it to ~4.94%, Reported), E4 (SOX −7.4% vs 200d Nov 9) and E6 (Texas TCEQ permit pause now Confirmed from primary documents; still one of the two states needed for red)."
  },
- "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), third day. Financing is still the stress (B6 red on OpenAI's ~$11B first close, Reported); B200 rent set another three-month high. CoreWeave Q3 after Tuesday's close is the first earnings test. E5 or E6 red → 53.3. Inform only — no trades.",
+ "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), fourth day. Financing is still the stress: SoftBank booked a Confirmed $3.73B loss on prepaid US AI power gear and CoreWeave CDS widened past 1,240bp into tonight's Q3. Demand is intact: TSMC's October revenue was a record +59.7% YoY and rents sit near highs. E6 red → 53.3. Inform only — no trades.",
  "next_prints": [
   {
    "when": "Tue Nov 10",
