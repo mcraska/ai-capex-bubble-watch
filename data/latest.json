@@ -31,7 +31,7 @@
  "nearest_flip": {
   "id": "E5/E6",
   "if_red": 53.3,
-  "note": "Composite already RED. E5 red (Risk Matrix DEFLATION only) or E6 red → 53.3. Reverts to 49.2 AMBER only if the OpenAI first close is denied/corrected or shown ≥$15B; E4 recovering alone → 50.0, still RED."
+  "note": "Composite already RED. E5 red (Risk Matrix DEFLATION only) or E6 red \u2192 53.3. Reverts to 49.2 AMBER only if the OpenAI first close is denied/corrected or shown \u2265$15B; E4 recovering alone \u2192 50.0, still RED."
  },
  "indicator_count": 29,
  "buckets": {
@@ -42,7 +42,7 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "RED driver. OpenAI's ~$11B first close at $1.25T sits under the ~$15B gate (Reported). SoftBank booked a $3.73B loss on prepaid US AI-DC power equipment (Confirmed). CoreWeave 5y CDS >1,240bp into its Nov 10 Q3 (Reported). Anthropic's leaked $70–80 IPO range was retracted (Reported).",
+   "read": "RED driver. OpenAI's ~$11B first close at $1.25T sits under the ~$15B gate (Reported). SoftBank booked a $3.73B loss on prepaid US AI-DC power equipment (Confirmed). CoreWeave 5y CDS >1,240bp into its Nov 10 Q3 (Reported). Anthropic's leaked $70\u201380 IPO range was retracted (Reported).",
    "score": 85.3
   },
   "C": {
@@ -57,22 +57,22 @@
   },
   "E": {
    "title": "Macro & markets",
-   "read": "E4 stays red (SOX −7.4% vs 200d Nov 9 after Monday's bounce). Hot October CPI (core +0.3%) lifted the 10y to ~4.94% (Reported). 42 Macro: INFLATION, risk-off 64%; KISS 95/0/0/5. E6 amber: Texas permit pause Confirmed, one of two states needed.",
+   "read": "E4 stays red (SOX \u22127.4% vs 200d Nov 9 after Monday's bounce). Hot October CPI (core +0.3%) lifted the 10y to ~4.94% (Reported). 42 Macro: INFLATION, risk-off 64%; KISS 95/0/0/5. E6 amber: Texas permit pause Confirmed, one of two states needed.",
    "score": 58.3
   }
  },
- "pattern": "Financing breaks first. The lab-funding and neocloud-credit legs have now pushed the composite into RED while GPU rents, contract prices and supplier commitments are still firm — a funding-before-orders sequence, not yet a physical-demand bust.",
+ "pattern": "Financing breaks first. The lab-funding and neocloud-credit legs have now pushed the composite into RED while GPU rents, contract prices and supplier commitments are still firm \u2014 a funding-before-orders sequence, not yet a physical-demand bust.",
  "decisive": [
   "GPU rents breaking lower (T-14)",
-  "Financing window shut for good — lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
+  "Financing window shut for good \u2014 lab/neocloud IPO pulled or GPU-backed loan default (T-15)",
   "Hyperscaler cancelling capacity for demand reasons rather than grid (D2b), or Big-4 capex outrunning OCF while 2027 guides decelerate (T-16)"
  ],
  "methodology": {
   "color_points": "green=0, amber=0.5, red=1; n/a excluded from denominator",
-  "weights": "w3=financing/unit-econ (2–4q lead); w2=intent/orders/macro (~1–2q); w1=coincident supplier/volume",
-  "composite": "Σ(weight × points) ÷ Σ(weight) × 100",
-  "bands": "GREEN < 25 · AMBER 25–49 · RED ≥ 50",
-  "note": "Trend: a rise of ≥10 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 → 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
+  "weights": "w3=financing/unit-econ (2\u20134q lead); w2=intent/orders/macro (~1\u20132q); w1=coincident supplier/volume",
+  "composite": "\u03a3(weight \u00d7 points) \u00f7 \u03a3(weight) \u00d7 100",
+  "bands": "GREEN < 25 \u00b7 AMBER 25\u201349 \u00b7 RED \u2265 50",
+  "note": "Trend: a rise of \u226510 points in two weeks matters even inside a band. 2026-10-29: A8 Server OEM earnings (w2) added; total weight 59 \u2192 61 (29 rows). Pre-A8 like-for-like composite shown as composite_pre_A8_28row."
  },
  "indicators": [
   {
@@ -87,7 +87,7 @@
    "id": "A2",
    "bucket": "A",
    "name": "Capex/OCF, FCF, capex/revenue",
-   "reading": "Big-4 Q3 ~115% of OCF; AMZN 182%, TTM FCF −$42.4B",
+   "reading": "Big-4 Q3 ~115% of OCF; AMZN 182%, TTM FCF \u2212$42.4B",
    "weight": 3,
    "color": "R"
   },
@@ -95,7 +95,7 @@
    "id": "A3",
    "bucket": "A",
    "name": "Backlog / RPO quality",
-   "reading": "AWS RPO $578B, 6.1-yr life; commitments $883.6B (10-Q, Conf.)",
+   "reading": "CRWV backlog ~$132.5B +138%; AWS RPO $578B; ~$9B prepays (IR, Conf.)",
    "weight": 2,
    "color": "A"
   },
@@ -119,7 +119,7 @@
    "id": "A6",
    "bucket": "A",
    "name": "Korea / Taiwan exports",
-   "reading": "Korea Oct chips $56.44B +259% (Conf.); TW Sep orders +62.4%",
+   "reading": "Korea Nov 1\u201310 chips $16.6B +331% YoY (KCS, Conf.)",
    "weight": 1,
    "color": "G"
   },
@@ -135,7 +135,7 @@
    "id": "A8",
    "bucket": "A",
    "name": "Server OEM AI/ server earnings",
-   "reading": "Dell AI +100%, LNV ISG +98%, HPE Srv +35%, SMCI Q1 prelim 3.7–3.9x (Conf.)",
+   "reading": "Dell AI +100%, LNV ISG +98%, HPE Srv +35%, SMCI Q1 prelim 3.7\u20133.9x (Conf.)",
    "weight": 2,
    "color": "G"
   },
@@ -151,7 +151,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "ORCL CDS 305bp Nov 5 (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
+   "reading": "ORCL CDS 301.5bp Nov 9 (Rep.); IG tech OAS 76\u2192108bp (Dale); META \u2264$25B bond",
    "weight": 3,
    "color": "R"
   },
@@ -167,7 +167,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "ANT S-1/A-1 range blank (Conf.); Polymkt top-IPO odds 62%→28% (Rep.)",
+   "reading": "ANT S-1/A-2 range $70\u201378 filed Nov 10 (Conf.); not yet priced",
    "weight": 3,
    "color": "R"
   },
@@ -175,7 +175,7 @@
    "id": "B5",
    "bucket": "B",
    "name": "Vendor fin. / circular / off-B/S",
-   "reading": "SoftBank $3.73B US AI-DC power prepay loss (Conf.); CRWV CDS >1,240bp",
+   "reading": "CRWV pivot to prepay/secured; CDS ~1,152bp Nov 10 (Rep.); $26B Class N",
    "weight": 2,
    "color": "A"
   },
@@ -191,7 +191,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.18; B200 20d $9.63, spot $9.90 (Nov 9, Ornn, Rep.)",
+   "reading": "H100 20d $3.18; B200 20d $9.65 (Nov 10, Ornn, Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -199,7 +199,7 @@
    "id": "C2",
    "bucket": "C",
    "name": "Token price vs usage",
-   "reading": "Google 1P tokens/min +40% QoQ (Conf.); Kimi ~5 wks behind (Rep.)",
+   "reading": "Carbon GA $2/$10 vs Fable $8/$40 (Conf. list); usage/task rising",
    "weight": 2,
    "color": "A"
   },
@@ -207,7 +207,7 @@
    "id": "C3",
    "bucket": "C",
    "name": "AI revenue vs capex gap",
-   "reading": "ANT Q3 +47% QoQ, rev/compute 1.72x (Conf.); Ramp Q4 +15–25%, Pies disputes",
+   "reading": "ANT Q3 $17.0B (Conf.); OpenAI Q3 ~$10B, op loss $10.9B (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -215,7 +215,7 @@
    "id": "C4",
    "bucket": "C",
    "name": "Enterprise adoption",
-   "reading": "Census BTOS 24.6%, new high (Sep 21–Oct 4)",
+   "reading": "Census BTOS 24.6%, new high (Sep 21\u2013Oct 4)",
    "weight": 1,
    "color": "G"
   },
@@ -239,7 +239,7 @@
    "id": "D2a",
    "bucket": "D",
    "name": "Pipeline attrition (grid/permit)",
-   "reading": "TX gov-elect DC moratorium pledge; Gerstner: 10–15 GW of ~43 GW 2027 at risk",
+   "reading": "TX gov-elect DC moratorium pledge; Gerstner: 10\u201315 GW of ~43 GW 2027 at risk",
    "weight": 2,
    "color": "R"
   },
@@ -247,7 +247,7 @@
    "id": "D2b",
    "bucket": "D",
    "name": "Demand-caused cancellations",
-   "reading": "None demand-cited; ORCL–Tencent $7B cancel = export policy (Rep.)",
+   "reading": "None demand-cited; ORCL\u2013Tencent $7B cancel = export policy (Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -255,7 +255,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.88 (Nov 9 CMT); TIPS 2.66; MOVE 85.98; CPI hot, 10y ~4.94 (Rep.)",
+   "reading": "10y 4.98 (Nov 10 CMT); TIPS 2.78; MOVE 92.43 (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -271,7 +271,7 @@
    "id": "E3",
    "bucket": "E",
    "name": "USD & liquidity",
-   "reading": "Broad USD 121.67 (Oct 30); DXY 101.55 Nov 5; RRP $0.1B; NFCI −0.46",
+   "reading": "Broad USD 121.67 (Oct 30); DXY 101.55 Nov 5; RRP $0.1B; NFCI \u22120.46",
    "weight": 1,
    "color": "A"
   },
@@ -279,7 +279,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,034 (Nov 9) −7.4% vs 200d, −31.4% from high (Yahoo) → RED held",
+   "reading": "SOX 9,998 (Nov 10) \u22127.9% vs 200d, \u221231.7% from high (Yahoo) \u2192 RED held",
    "weight": 2,
    "color": "R"
   },
@@ -308,25 +308,17 @@
    "color": "A"
   }
  ],
- "as_of": "2026-11-10",
+ "as_of": "2026-11-11",
  "dod": {
   "delta": 0.0,
   "color_changes": [],
-  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: A4 (TSMC October revenue +59.7% YoY, a record, Confirmed), A7 (Taiwan server ODMs ~2x YoY in October), B5 (SoftBank $3.73B loss on prepaid US AI data-center power equipment, Confirmed; CoreWeave 5y CDS >1,240bp, Reported), C1 (Ornn Nov 9: B200 20-session $9.63, H100 $3.18, Reported), E1 (10y 4.88% Nov 9; hot October CPI pushed it to ~4.94%, Reported), E4 (SOX −7.4% vs 200d Nov 9) and E6 (Texas TCEQ permit pause now Confirmed from primary documents; still one of the two states needed for red)."
+  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: A3 (CoreWeave Q3 backlog ~$132.5B, +138% YoY; ~$9B customer prepayments expected, Confirmed IR), A6 (Korea Nov 1\u201310 chip exports $16.6B, +331% YoY, Confirmed), B2 (ORCL 5y CDS 301.5bp Nov 9, Reported), B4 (Anthropic S-1/A-2 filed a $70\u201378 range Nov 10, Confirmed; not yet priced), B5 (CoreWeave shifts to prepayments and asset-level debt; CDS ~1,152bp Nov 10, Reported), C1 (Ornn Nov 10: H100 20-session $3.18, B200 $9.65, Reported), C2 (Gemini 4 Carbon GA at $2/$10 per Mtok vs Fable $8/$40), C3 (OpenAI Q3 ~$10B revenue, \u2212$10.9B operating loss, Reported), E1 (10y 4.98% Nov 10; MOVE 92.43) and E4 (SOX \u22127.9% vs 200d Nov 10)."
  },
- "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), fourth day. Financing is still the stress: SoftBank booked a Confirmed $3.73B loss on prepaid US AI power gear and CoreWeave CDS widened past 1,240bp into tonight's Q3. Demand is intact: TSMC's October revenue was a record +59.7% YoY and rents sit near highs. E6 red → 53.3. Inform only — no trades.",
+ "key_takeaway": "No change: 51.6 RED (31.5 \u00f7 61; 8R/11A/10G), fifth day. CoreWeave beat and raised (backlog ~$132.5B) and is moving to customer prepayments, which eases the funding scare without clearing it; Anthropic filed a $70\u201378 range. Demand is intact: Korea's Nov 1\u201310 chip exports +331% YoY and rents near highs. E5/E6 red \u2192 53.3. Inform only \u2014 no trades.",
  "next_prints": [
   {
-   "when": "Tue Nov 10",
-   "what": "October CPI; TSMC October revenue; CoreWeave Q3 (after close); KYEC/MOPS ODM"
-  },
-  {
-   "when": "Wed Nov 11",
-   "what": "Korea Nov 1–10 exports"
-  },
-  {
    "when": "Thu Nov 12",
-   "what": "Nebius Q3 (MSFT Vineland tranche test)"
+   "what": "Nebius Q3; Farside Nov 11 row (T-07)"
   },
   {
    "when": "Fri Nov 13",
@@ -334,11 +326,19 @@
   },
   {
    "when": "Tue Nov 17",
-   "what": "NVDA Q3"
+   "what": "NVDA Q3 + 10-Q (T-04)"
+  },
+  {
+   "when": "Wed Nov 18",
+   "what": "Huang closed congressional briefing"
   },
   {
    "when": "Thu Nov 19",
    "what": "ING data-center loan auction bids"
+  },
+  {
+   "when": "~Nov 21",
+   "what": "Korea Nov 1\u201320 exports; Taiwan Oct export orders"
   }
  ]
 }
