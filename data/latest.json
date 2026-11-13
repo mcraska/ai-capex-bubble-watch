@@ -42,7 +42,7 @@
   },
   "B": {
    "title": "Financing & credit",
-   "read": "RED driver. OpenAI's ~$11B first close at $1.25T sits under the ~$15B gate (Reported). SoftBank booked a $3.73B loss on prepaid US AI-DC power equipment (Confirmed). CoreWeave 5y CDS >1,240bp into its Nov 10 Q3 (Reported). Anthropic's leaked $70–80 IPO range was retracted (Reported).",
+   "read": "RED driver. Huang's exit puts NVIDIA's backstops in question: SemiAnalysis cites $530B of off-balance-sheet guarantees and $36B take-or-pay floors under neoclouds (Reported). NVIDIA's $10B slice of Anthropic's $26B placement is now the IPO's open question ahead of Nov 18 pricing; no S-1/A-3 (Reported). ORCL 5y CDS ~300bp; OpenAI round still under the ~$15B gate.",
    "score": 85.3
   },
   "C": {
@@ -57,7 +57,7 @@
   },
   "E": {
    "title": "Macro & markets",
-   "read": "E4 stays red (SOX −7.4% vs 200d Nov 9 after Monday's bounce). Hot October CPI (core +0.3%) lifted the 10y to ~4.94% (Reported). 42 Macro: INFLATION, risk-off 64%; KISS 95/0/0/5. E6 amber: Texas permit pause Confirmed, one of two states needed.",
+   "read": "E4 stays red (SOX −3.4% vs 200d Nov 12). 10y 5.10% Nov 12, ~5.13% pre-PPI; October PPI headline +0.3% (a touch soft), core in line. 42 Macro: INFLATION, risk-off 67% (Nov 12 Leadoff); KISS 95/0/0/5. E6 amber.",
    "score": 58.3
   }
  },
@@ -95,7 +95,7 @@
    "id": "A3",
    "bucket": "A",
    "name": "Backlog / RPO quality",
-   "reading": "CRWV backlog ~$132.5B +138%; AWS RPO $578B; ~$9B prepays (IR, Conf.)",
+   "reading": "NBIS 2027 rev $12–13B (~4x), 2026 timing trim; CBRS RPO $26.1B (Conf.)",
    "weight": 2,
    "color": "A"
   },
@@ -151,7 +151,7 @@
    "id": "B2",
    "bucket": "B",
    "name": "Hyperscaler IG credit",
-   "reading": "ORCL CDS 301.25bp Nov 10 (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
+   "reading": "ORCL CDS 299.50bp Nov 11 (Rep.); IG tech OAS 76→108bp (Dale); META ≤$25B bond",
    "weight": 3,
    "color": "R"
   },
@@ -167,7 +167,7 @@
    "id": "B4",
    "bucket": "B",
    "name": "AI-infra IPO window",
-   "reading": "ANT S-1/A-2 range $70–78 filed Nov 10 (Conf.); not yet priced",
+   "reading": "ANT S-1/A-2 $70–78, prices Nov 18; NVDA $10B slice in question post-Huang (Rep.)",
    "weight": 3,
    "color": "R"
   },
@@ -175,7 +175,7 @@
    "id": "B5",
    "bucket": "B",
    "name": "Vendor fin. / circular / off-B/S",
-   "reading": "CRWV pivot to prepay/secured; CDS ~1,152bp Nov 10 (Rep.); $26B Class N",
+   "reading": "SA: NVDA $530B guarantees, 'Jensen put' at risk (Rep.); CRWV CDS ~1,135bp Nov 10",
    "weight": 2,
    "color": "A"
   },
@@ -191,7 +191,7 @@
    "id": "C1",
    "bucket": "C",
    "name": "GPU rental prices",
-   "reading": "H100 20d $3.19; B200 20d $9.68 (Nov 11, Ornn, Rep.)",
+   "reading": "H100 20d $3.20; B200 20d $9.68 (Nov 12, Ornn, Rep.)",
    "weight": 3,
    "color": "G"
   },
@@ -255,7 +255,7 @@
    "id": "E1",
    "bucket": "E",
    "name": "10y / real yield / MOVE",
-   "reading": "10y 4.98 (Nov 10 CMT); TIPS 2.78; MOVE 92.43 (Rep.)",
+   "reading": "10y 5.10 (Nov 12 CMT); TIPS 2.86; MOVE 98.43 (Rep.)",
    "weight": 2,
    "color": "A"
   },
@@ -279,7 +279,7 @@
    "id": "E4",
    "bucket": "E",
    "name": "Semis breadth & positioning",
-   "reading": "SOX 10,564 (Nov 11) −2.8% vs 200d, −27.8% from high (Yahoo) → RED held",
+   "reading": "SOX 10,507 (Nov 12) −3.4% vs 200d, −28.2% from high (Yahoo) → RED held",
    "weight": 2,
    "color": "R"
   },
@@ -287,7 +287,7 @@
    "id": "E5",
    "bucket": "E",
    "name": "42 Macro regime",
-   "reading": "INFLATION (Nov 10/11 Leadoff); risk-off 65%; KISS 95/0/0/5; red=DEFLATION",
+   "reading": "INFLATION (Nov 12 Leadoff PDF); risk-off 67%; KISS 95/0/0/5; red=DEFLATION",
    "weight": 2,
    "color": "A"
   },
@@ -308,13 +308,9 @@
    "color": "A"
   }
  ],
- "as_of": "2026-11-12",
- "dod": {
-  "delta": 0.0,
-  "color_changes": [],
-  "note": "SHIFTS: none. No indicator changed color. Readings refreshed within color: B2 (ORCL 5y CDS 301.25bp Nov 10, Reported), C1 (Ornn Nov 11: H100 20-session $3.19, B200 $9.68, Reported), E4 (SOX 10,564 Nov 11, −2.8% vs 200d, still RED), E5 (risk-off INFLATION 65%, Nov 10/11 Leadoffs). New context, no color change: NVDA board reportedly weighing Huang's removal (Reported; governance shock, not a capex-demand signal), Vistra deferred its ~$500M Helix contribution to 2027 and Quantum DC paused a 1.2 GW Adelaide campus (non-hyperscaler, grid/permit-political), TrendForce says PC OEMs are trimming memory buys."
- },
- "key_takeaway": "No change: 51.6 RED (31.5 ÷ 61; 8R/11A/10G), sixth day. NVIDIA's governance shock and two non-hyperscaler data-center deferrals add noise but move no color; demand stays intact with rents near highs and Rubin perf-per-TCO gains. Financing is still the hot spot. E5/E6 red → 53.3. Inform only — no trades.",
+ "as_of": "2026-11-13",
+ "dod": 0.0,
+ "key_takeaway": "No change: 51.6 RED, seventh day (8 red / 11 amber / 10 green). Huang's resignation (Confirmed) moves risk into financing: SemiAnalysis flags NVIDIA's $530B of guarantees (the 'Jensen put') and NVIDIA's $10B slice of Anthropic's placement is in question (Reported). Demand is intact: Cerebras and Nebius say capacity, not demand, limits them, and GPU rents sit near highs.",
  "next_prints": [
   {
    "when": "Thu Nov 12",
